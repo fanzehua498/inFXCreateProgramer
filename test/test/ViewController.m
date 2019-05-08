@@ -62,7 +62,7 @@ static void*queueKey = "QueueKey";
 //    dispatch_main();
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 30)];
-    label.backgroundColor = [UIColor redColor];
+//    label.backgroundColor = [UIColor redColor];
     label.text = @"我是alabel";
     [self.view addSubview:label];
     [NSTimer scheduledTimerWithTimeInterval:4 repeats:YES block:^(NSTimer * _Nonnull timer) {
