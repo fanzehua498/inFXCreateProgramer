@@ -1,0 +1,6 @@
+framework module ShellSDK {
+  umbrella header "ShellSDK.h"
+
+  export *
+  module * { export * }
+}

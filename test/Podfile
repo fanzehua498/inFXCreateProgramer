@@ -1,0 +1,20 @@
+platform :ios,'9.0'
+#use_frameworks!
+
+def common_Pods
+	pod 'AFNetworking'
+	pod 'SSZipArchive'
+	pod 'MJExtension'
+	pod 'pop', :git => 'https://github.com/facebook/pop.git'
+end
+
+target 'test' do
+	common_Pods
+	pod 'Masonry'
+end
+
+target 'Customer' do
+	common_Pods
+	pod 'YYModel'
+	
+end

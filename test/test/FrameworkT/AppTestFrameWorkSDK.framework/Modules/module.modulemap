@@ -1,0 +1,6 @@
+framework module AppTestFrameWorkSDK {
+  umbrella header "AppTestFrameWorkSDK.h"
+
+  export *
+  module * { export * }
+}
