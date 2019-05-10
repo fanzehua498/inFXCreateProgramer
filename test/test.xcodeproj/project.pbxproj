@@ -52,6 +52,10 @@
 		9313CA6A22817F2400C59C9C /* logo_img_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9313CA6422817F2400C59C9C /* logo_img_02@2x.png */; };
 		9313CA6B22817F2400C59C9C /* sound01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9313CA6522817F2400C59C9C /* sound01.wav */; };
 		93145BBE2264614500B7A6DC /* AreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93145BBD2264614400B7A6DC /* AreaModel.m */; };
+		93192A5222854ACC00FA5089 /* ReadOnlyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93192A5122854ACC00FA5089 /* ReadOnlyModel.m */; };
+		93192A5422854E2700FA5089 /* DCURLRouter.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93192A5322854E2700FA5089 /* DCURLRouter.plist */; };
+		93192A582285624900FA5089 /* ZHTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93192A572285624900FA5089 /* ZHTestViewController.m */; };
+		93192A5C2285736C00FA5089 /* ZHAnimationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93192A5B2285736C00FA5089 /* ZHAnimationCell.m */; };
 		9319A14E22254C7D00FA05C2 /* ProblemOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 9319A14D22254C7D00FA05C2 /* ProblemOne.m */; };
 		935F6A7621704AF40082D8F7 /* HotlListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 935F6A7521704AF40082D8F7 /* HotlListView.m */; };
 		935F6A79217076BC0082D8F7 /* CityListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 935F6A78217076BC0082D8F7 /* CityListView.m */; };
@@ -132,6 +136,14 @@
 		9313CA6522817F2400C59C9C /* sound01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound01.wav; sourceTree = "<group>"; };
 		93145BBC2264614400B7A6DC /* AreaModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AreaModel.h; sourceTree = "<group>"; };
 		93145BBD2264614400B7A6DC /* AreaModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AreaModel.m; sourceTree = "<group>"; };
+		93192A5022854ACC00FA5089 /* ReadOnlyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReadOnlyModel.h; sourceTree = "<group>"; };
+		93192A5122854ACC00FA5089 /* ReadOnlyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadOnlyModel.m; sourceTree = "<group>"; };
+		93192A5322854E2700FA5089 /* DCURLRouter.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DCURLRouter.plist; sourceTree = "<group>"; };
+		93192A5522854F6500FA5089 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		93192A562285624900FA5089 /* ZHTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHTestViewController.h; sourceTree = "<group>"; };
+		93192A572285624900FA5089 /* ZHTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHTestViewController.m; sourceTree = "<group>"; };
+		93192A5A2285736C00FA5089 /* ZHAnimationCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHAnimationCell.h; sourceTree = "<group>"; };
+		93192A5B2285736C00FA5089 /* ZHAnimationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHAnimationCell.m; sourceTree = "<group>"; };
 		9319A14C22254C7D00FA05C2 /* ProblemOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProblemOne.h; sourceTree = "<group>"; };
 		9319A14D22254C7D00FA05C2 /* ProblemOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProblemOne.m; sourceTree = "<group>"; };
 		935F6A7421704AF40082D8F7 /* HotlListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotlListView.h; sourceTree = "<group>"; };
@@ -281,6 +293,7 @@
 		930E4413226EA28500EE3265 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				93192A592285733400FA5089 /* Cell */,
 				9311CD6C2282A4900049A7A2 /* Two */,
 				9311CD692282A42D0049A7A2 /* One */,
 			);
@@ -298,6 +311,8 @@
 				9313CA6022817F2300C59C9C /* logo_img_02@3x.png */,
 				9313CA6522817F2400C59C9C /* sound01.wav */,
 				9313CA6122817F2300C59C9C /* sound02.wav */,
+				93192A5322854E2700FA5089 /* DCURLRouter.plist */,
+				93192A5522854F6500FA5089 /* PrefixHeader.pch */,
 			);
 			path = File;
 			sourceTree = "<group>";
@@ -313,6 +328,8 @@
 				93109F15225F13C200DF5AA2 /* CityListViewController.h */,
 				93109F16225F13C200DF5AA2 /* CityListViewController.m */,
 				93109F17225F13C200DF5AA2 /* CityListViewController.xib */,
+				93192A562285624900FA5089 /* ZHTestViewController.h */,
+				93192A572285624900FA5089 /* ZHTestViewController.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -339,6 +356,8 @@
 			children = (
 				93145BBC2264614400B7A6DC /* AreaModel.h */,
 				93145BBD2264614400B7A6DC /* AreaModel.m */,
+				93192A5022854ACC00FA5089 /* ReadOnlyModel.h */,
+				93192A5122854ACC00FA5089 /* ReadOnlyModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -367,6 +386,15 @@
 				9311CD782282DC030049A7A2 /* FFUIPageControlView+CatrgoryPage.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		93192A592285733400FA5089 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				93192A5A2285736C00FA5089 /* ZHAnimationCell.h */,
+				93192A5B2285736C00FA5089 /* ZHAnimationCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -503,6 +531,7 @@
 				93FA3179216DD28800F54F80 /* ClickViewController.xib in Resources */,
 				93023275216D9C4F009AF506 /* Assets.xcassets in Resources */,
 				9313CA6822817F2400C59C9C /* logo_img_01@3x.png in Resources */,
+				93192A5422854E2700FA5089 /* DCURLRouter.plist in Resources */,
 				93109F14225F115800DF5AA2 /* MTcityList.xml in Resources */,
 				93109F19225F13C200DF5AA2 /* CityListViewController.xib in Resources */,
 				9313CA6722817F2400C59C9C /* sound02.wav in Resources */,
@@ -586,6 +615,8 @@
 			files = (
 				93109F18225F13C200DF5AA2 /* CityListViewController.m in Sources */,
 				930E4416226EA2D400EE3265 /* FFPlayerButton.m in Sources */,
+				93192A582285624900FA5089 /* ZHTestViewController.m in Sources */,
+				93192A5222854ACC00FA5089 /* ReadOnlyModel.m in Sources */,
 				93023270216D9C4E009AF506 /* ViewController.m in Sources */,
 				93054E65227004B200F192F8 /* AnLineView.m in Sources */,
 				935F6A7621704AF40082D8F7 /* HotlListView.m in Sources */,
@@ -597,6 +628,7 @@
 				93109F12225EE2D000DF5AA2 /* CustomView.m in Sources */,
 				9306D460216F41E800B9A5D1 /* SiftView.m in Sources */,
 				9302327B216D9C4F009AF506 /* main.m in Sources */,
+				93192A5C2285736C00FA5089 /* ZHAnimationCell.m in Sources */,
 				9302326D216D9C4E009AF506 /* AppDelegate.m in Sources */,
 				935F6A79217076BC0082D8F7 /* CityListView.m in Sources */,
 				9311CD792282DC030049A7A2 /* FFUIPageControlView+CatrgoryPage.m in Sources */,
@@ -797,6 +829,7 @@
 					"$(PROJECT_DIR)/test",
 					"$(PROJECT_DIR)/test/FrameworkT",
 				);
+				GCC_PREFIX_HEADER = test/File/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -827,6 +860,7 @@
 					"$(PROJECT_DIR)/test",
 					"$(PROJECT_DIR)/test/FrameworkT",
 				);
+				GCC_PREFIX_HEADER = test/File/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TargetType=2";
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

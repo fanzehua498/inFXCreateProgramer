@@ -9,6 +9,7 @@
 #import "CityListViewController.h"
 #import "AreaModel.h"
 #import <MJExtension.h>
+#import "ReadOnlyModel.h"
 
 @interface CityListViewController ()<NSXMLParserDelegate,UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -28,20 +29,31 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     NSString *path = [[NSBundle mainBundle]pathForResource:@"MTcityList" ofType:@"xml"];
 
     NSData *xmlData = [[NSData alloc] initWithContentsOfFile:path];
     NSXMLParser *parser = [[NSXMLParser alloc] initWithData:xmlData];
     parser.delegate = self;
     
-    BOOL result = [parser parse];
-    if (result) {
-        NSLog(@"成功parse");
-    }
     
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        BOOL result = [parser parse];
+        if (result) {
+            NSLog(@"成功parse");
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [self.tableView reloadData];
+            });
+        }
+    });
+
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
+    ReadOnlyModel *mo = [[ReadOnlyModel alloc] initWithStr:@"init"];
+    NSLog(@"befor:%@",mo.readOnlyStr);
+    [mo setValue:@"change" forKey:@"readOnlyStr"];
+    NSLog(@"after:%@",mo.readOnlyStr);
 }
 
 #pragma mark - UITableViewDelegate,UITableViewDataSource
@@ -91,6 +103,8 @@
     areaCityModel *city = model.area[indexPath.row];
     cell.textLabel.text = city.name;
     
+    [city setValue:@(10) forKey:@"readOnlyHeight"];
+    NSLog(@"readOnlyHeight:%lf",city.readOnlyHeight);
     return cell;
 }
 

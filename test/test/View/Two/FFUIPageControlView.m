@@ -85,7 +85,7 @@
       A表示振幅决定峰值，A越大波浪越陡，A为0时无波浪为直线。
       ω决定周期，周期T= 2π/ω。ω越大周期越小波浪越密集
       ψ控制正弦波浪曲线在x轴方向上的平移
-      D控制波浪曲线在y轴方向上的平移
+      D控制波浪曲线在y轴方向上的平移 
   */
     UIBezierPath * path = [UIBezierPath bezierPath];
     CGFloat y = [UIScreen mainScreen].bounds.size.height/2;

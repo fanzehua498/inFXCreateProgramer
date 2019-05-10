@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
+    self.view.backgroundColor = [UIColor whiteColor];
     NSLog(@"1:%@",NSStringFromCGRect(self.labelL.bounds));
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         self.labelL.text = @"asdmnzckujehwjknjkxchnskjdhalsjdklejwkldxjklhlksjdlajdljqwiohjkxvcjkasdjakhdskljhfdjkshflaskhas";

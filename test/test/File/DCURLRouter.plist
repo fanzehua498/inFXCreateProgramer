@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>http</key>
+	<string>WebViewController</string>
+	<key>https</key>
+	<string>WebViewController</string>
+	<key>ZHTest</key>
+	<dict>
+		<key>ZHTest://citylist</key>
+		<string>CityListViewController</string>
+		<key>ZHTest://clickvc</key>
+		<string>ClickViewController</string>
+		<key>ZHTest://zipvc</key>
+		<string>ZipViewController</string>
+		<key>ZHTest://testvc</key>
+		<string>ZHTestViewController</string>
+	</dict>
+</dict>
+</plist>

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <MJExtension.h>
-
+#import <UIKit/UIKit.h>
 @class areaCityModel;
 
 @interface AreaModel : NSObject
@@ -24,6 +24,10 @@
 
 @property (copy, nonatomic) NSString *Id;
 @property (copy, nonatomic) NSString *name;
+
+@property (nonatomic,assign,readonly) CGFloat readOnlyHeight;
+
+@property (copy, nonatomic) NSString *readOnlyStr;
 @end
 
 
