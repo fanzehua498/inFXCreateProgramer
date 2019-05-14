@@ -60,6 +60,8 @@
 		935F6A7621704AF40082D8F7 /* HotlListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 935F6A7521704AF40082D8F7 /* HotlListView.m */; };
 		935F6A79217076BC0082D8F7 /* CityListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 935F6A78217076BC0082D8F7 /* CityListView.m */; };
 		93C1030E225B485100C1BA7C /* ShellSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C1030D225B485100C1BA7C /* ShellSDK.framework */; };
+		93C64FE622890363009B6109 /* ZHBluetoothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C64FE522890363009B6109 /* ZHBluetoothViewController.m */; };
+		93C64FE922896ECE009B6109 /* CircleSelectButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C64FE822896ECE009B6109 /* CircleSelectButtonView.m */; };
 		93FA3178216DD28800F54F80 /* ClickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FA3176216DD28800F54F80 /* ClickViewController.m */; };
 		93FA3179216DD28800F54F80 /* ClickViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93FA3177216DD28800F54F80 /* ClickViewController.xib */; };
 /* End PBXBuildFile section */
@@ -151,6 +153,10 @@
 		935F6A77217076BC0082D8F7 /* CityListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityListView.h; sourceTree = "<group>"; };
 		935F6A78217076BC0082D8F7 /* CityListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityListView.m; sourceTree = "<group>"; };
 		93C1030D225B485100C1BA7C /* ShellSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShellSDK.framework; sourceTree = "<group>"; };
+		93C64FE422890363009B6109 /* ZHBluetoothViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHBluetoothViewController.h; sourceTree = "<group>"; };
+		93C64FE522890363009B6109 /* ZHBluetoothViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHBluetoothViewController.m; sourceTree = "<group>"; };
+		93C64FE722896ECE009B6109 /* CircleSelectButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleSelectButtonView.h; sourceTree = "<group>"; };
+		93C64FE822896ECE009B6109 /* CircleSelectButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleSelectButtonView.m; sourceTree = "<group>"; };
 		93FA3175216DD28800F54F80 /* ClickViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClickViewController.h; sourceTree = "<group>"; };
 		93FA3176216DD28800F54F80 /* ClickViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClickViewController.m; sourceTree = "<group>"; };
 		93FA3177216DD28800F54F80 /* ClickViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClickViewController.xib; sourceTree = "<group>"; };
@@ -330,6 +336,8 @@
 				93109F17225F13C200DF5AA2 /* CityListViewController.xib */,
 				93192A562285624900FA5089 /* ZHTestViewController.h */,
 				93192A572285624900FA5089 /* ZHTestViewController.m */,
+				93C64FE422890363009B6109 /* ZHBluetoothViewController.h */,
+				93C64FE522890363009B6109 /* ZHBluetoothViewController.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -373,6 +381,8 @@
 				9311CD6E2282A6550049A7A2 /* FFUIPageControlView.m */,
 				9311CD702282D04D0049A7A2 /* FFPageCountView.h */,
 				9311CD712282D04D0049A7A2 /* FFPageCountView.m */,
+				93C64FE722896ECE009B6109 /* CircleSelectButtonView.h */,
+				93C64FE822896ECE009B6109 /* CircleSelectButtonView.m */,
 			);
 			path = Two;
 			sourceTree = "<group>";
@@ -624,6 +634,7 @@
 				93145BBE2264614500B7A6DC /* AreaModel.m in Sources */,
 				930B56F2225C4C7D005EAD28 /* ZipViewController.m in Sources */,
 				93FA3178216DD28800F54F80 /* ClickViewController.m in Sources */,
+				93C64FE922896ECE009B6109 /* CircleSelectButtonView.m in Sources */,
 				9311CD722282D04D0049A7A2 /* FFPageCountView.m in Sources */,
 				93109F12225EE2D000DF5AA2 /* CustomView.m in Sources */,
 				9306D460216F41E800B9A5D1 /* SiftView.m in Sources */,
@@ -634,6 +645,7 @@
 				9311CD792282DC030049A7A2 /* FFUIPageControlView+CatrgoryPage.m in Sources */,
 				9311CD762282DB270049A7A2 /* UIView+FirstCategoryView.m in Sources */,
 				9311CD6F2282A6550049A7A2 /* FFUIPageControlView.m in Sources */,
+				93C64FE622890363009B6109 /* ZHBluetoothViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

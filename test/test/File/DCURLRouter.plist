@@ -16,6 +16,8 @@
 		<string>ZipViewController</string>
 		<key>ZHTest://testvc</key>
 		<string>ZHTestViewController</string>
+		<key>ZHTest://bluetoothvc</key>
+		<string>ZHBluetoothViewController</string>
 	</dict>
 </dict>
 </plist>

@@ -7,6 +7,8 @@ def common_Pods
 	pod 'MJExtension'
 	pod 'pop', :git => 'https://github.com/facebook/pop.git'
 	pod 'DCURLRouter'
+	pod 'SDWebImage'
+	pod 'YYImage'
 end
 
 target 'test' do
