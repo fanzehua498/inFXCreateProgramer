@@ -55,7 +55,9 @@
     [mo setValue:@"change" forKey:@"readOnlyStr"];
     NSLog(@"after:%@",mo.readOnlyStr);
 }
-
+/** tableView滚动的时候,不要去做动画(微信的聊天界面做的就很好,在滚动的时候,动态图就不让他动,滚动停止的时候才动,不然可能会有点影响流畅度)。在滚动的时候加载图片，停止拖拽后在减速过程中不加载图片，减速停止后加载可见范围内图片
+ 
+ */
 #pragma mark - UITableViewDelegate,UITableViewDataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -80,6 +82,18 @@
     label.backgroundColor = [UIColor whiteColor];
     return label;
 }
+
+/** cell做数据绑定的时候，最好在willDisPlayCell里面进行 因为第一页有多少条就执行多少次*/
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    AreaModel *model = self.dataSource[indexPath.section];
+    areaCityModel *city = model.area[indexPath.row];
+    cell.textLabel.text = city.name;
+    
+    [city setValue:@(10) forKey:@"readOnlyHeight"];
+    NSLog(@"readOnlyHeight:%lf",city.readOnlyHeight);
+}
+
 //section右侧index数组
 -(NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView{
     tableView.sectionIndexColor = [UIColor grayColor];
@@ -92,19 +106,14 @@
     return index ;
 }
 
-
+/** 第一次加载有多少个cell就执行多少次，而且调用的时候cell还没显示 */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellId"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cellId"];
     }
-    AreaModel *model = self.dataSource[indexPath.section];
-    areaCityModel *city = model.area[indexPath.row];
-    cell.textLabel.text = city.name;
     
-    [city setValue:@(10) forKey:@"readOnlyHeight"];
-    NSLog(@"readOnlyHeight:%lf",city.readOnlyHeight);
     return cell;
 }
 

@@ -14,8 +14,14 @@
 #import <UserNotifications/UserNotifications.h>
 #import "ZHAnimationCell.h"
 #import "FFUIPageControlView.h"
+#import <Realm.h>
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+/** Realm有一个注册通知的方法：addNotificationBlock:
+ 作用：监听数据库数据的改变，如果监听到数据库数据改变，就会执行通知回调。刷新界面更新界面数据。
+ */
+@property (nonatomic,strong) RLMNotificationToken *token;
+
 
 @property (nonatomic,strong) UITableView *table;
 
@@ -25,16 +31,28 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    self.title = @"MAIN";
-    [self.view addSubview:self.table];
- 
-    [self dataAdd];
+-(void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
     
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"🏀🍎🐥💻";
+    [self.view addSubview:self.table];
+ 
+    [self dataAdd];
+    self.token = [[RLMRealm defaultRealm] addNotificationBlock:^(RLMNotification  _Nonnull notification, RLMRealm * _Nonnull realm) {
+       
+        NSLog(@"%@--%@",notification,realm);
+    }];
+}
+-(void)dealloc
+{
+    [self.token invalidate];
+}
 
 - (void)dataAdd{
     

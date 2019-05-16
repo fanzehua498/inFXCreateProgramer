@@ -9,6 +9,7 @@ def common_Pods
 	pod 'DCURLRouter'
 	pod 'SDWebImage'
 	pod 'YYImage'
+	pod 'Realm'
 end
 
 target 'test' do

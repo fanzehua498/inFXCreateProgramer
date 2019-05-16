@@ -57,8 +57,13 @@
 		93192A582285624900FA5089 /* ZHTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93192A572285624900FA5089 /* ZHTestViewController.m */; };
 		93192A5C2285736C00FA5089 /* ZHAnimationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93192A5B2285736C00FA5089 /* ZHAnimationCell.m */; };
 		9319A14E22254C7D00FA05C2 /* ProblemOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 9319A14D22254C7D00FA05C2 /* ProblemOne.m */; };
+		932B3B51228BE1E400CE88EA /* ZHTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 932B3B50228BE1E400CE88EA /* ZHTextField.m */; };
+		932B3B55228BF6F500CE88EA /* UITextField+ZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 932B3B54228BF6F500CE88EA /* UITextField+ZHCategory.m */; };
+		932B3B58228C1C9300CE88EA /* ZHRealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 932B3B57228C1C9300CE88EA /* ZHRealViewController.m */; };
 		935F6A7621704AF40082D8F7 /* HotlListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 935F6A7521704AF40082D8F7 /* HotlListView.m */; };
 		935F6A79217076BC0082D8F7 /* CityListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 935F6A78217076BC0082D8F7 /* CityListView.m */; };
+		93B3AFFC228D4D62008FDBF9 /* Books.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B3AFFB228D4D62008FDBF9 /* Books.m */; };
+		93B7D449228C1EFB0034719E /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B7D448228C1EFB0034719E /* Student.m */; };
 		93C1030E225B485100C1BA7C /* ShellSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C1030D225B485100C1BA7C /* ShellSDK.framework */; };
 		93C64FE622890363009B6109 /* ZHBluetoothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C64FE522890363009B6109 /* ZHBluetoothViewController.m */; };
 		93C64FE922896ECE009B6109 /* CircleSelectButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C64FE822896ECE009B6109 /* CircleSelectButtonView.m */; };
@@ -148,10 +153,20 @@
 		93192A5B2285736C00FA5089 /* ZHAnimationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHAnimationCell.m; sourceTree = "<group>"; };
 		9319A14C22254C7D00FA05C2 /* ProblemOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProblemOne.h; sourceTree = "<group>"; };
 		9319A14D22254C7D00FA05C2 /* ProblemOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProblemOne.m; sourceTree = "<group>"; };
+		932B3B4F228BE1E400CE88EA /* ZHTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHTextField.h; sourceTree = "<group>"; };
+		932B3B50228BE1E400CE88EA /* ZHTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHTextField.m; sourceTree = "<group>"; };
+		932B3B53228BF6F500CE88EA /* UITextField+ZHCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+ZHCategory.h"; sourceTree = "<group>"; };
+		932B3B54228BF6F500CE88EA /* UITextField+ZHCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ZHCategory.m"; sourceTree = "<group>"; };
+		932B3B56228C1C9300CE88EA /* ZHRealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHRealViewController.h; sourceTree = "<group>"; };
+		932B3B57228C1C9300CE88EA /* ZHRealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHRealViewController.m; sourceTree = "<group>"; };
 		935F6A7421704AF40082D8F7 /* HotlListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotlListView.h; sourceTree = "<group>"; };
 		935F6A7521704AF40082D8F7 /* HotlListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotlListView.m; sourceTree = "<group>"; };
 		935F6A77217076BC0082D8F7 /* CityListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityListView.h; sourceTree = "<group>"; };
 		935F6A78217076BC0082D8F7 /* CityListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityListView.m; sourceTree = "<group>"; };
+		93B3AFFA228D4D62008FDBF9 /* Books.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Books.h; sourceTree = "<group>"; };
+		93B3AFFB228D4D62008FDBF9 /* Books.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Books.m; sourceTree = "<group>"; };
+		93B7D447228C1EFB0034719E /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		93B7D448228C1EFB0034719E /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		93C1030D225B485100C1BA7C /* ShellSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShellSDK.framework; sourceTree = "<group>"; };
 		93C64FE422890363009B6109 /* ZHBluetoothViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHBluetoothViewController.h; sourceTree = "<group>"; };
 		93C64FE522890363009B6109 /* ZHBluetoothViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHBluetoothViewController.m; sourceTree = "<group>"; };
@@ -250,6 +265,7 @@
 		9302326A216D9C4E009AF506 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				932B3B4E228BE1AB00CE88EA /* ZHObject */,
 				9311CD732282DAEE0049A7A2 /* Category */,
 				9311CD6B2282A4600049A7A2 /* Model */,
 				9311CD682282A4040049A7A2 /* VC */,
@@ -300,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				93192A592285733400FA5089 /* Cell */,
+				932B3B52228BF6C800CE88EA /* Three */,
 				9311CD6C2282A4900049A7A2 /* Two */,
 				9311CD692282A42D0049A7A2 /* One */,
 			);
@@ -338,6 +355,8 @@
 				93192A572285624900FA5089 /* ZHTestViewController.m */,
 				93C64FE422890363009B6109 /* ZHBluetoothViewController.h */,
 				93C64FE522890363009B6109 /* ZHBluetoothViewController.m */,
+				932B3B56228C1C9300CE88EA /* ZHRealViewController.h */,
+				932B3B57228C1C9300CE88EA /* ZHRealViewController.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -366,6 +385,10 @@
 				93145BBD2264614400B7A6DC /* AreaModel.m */,
 				93192A5022854ACC00FA5089 /* ReadOnlyModel.h */,
 				93192A5122854ACC00FA5089 /* ReadOnlyModel.m */,
+				93B7D447228C1EFB0034719E /* Student.h */,
+				93B7D448228C1EFB0034719E /* Student.m */,
+				93B3AFFA228D4D62008FDBF9 /* Books.h */,
+				93B3AFFB228D4D62008FDBF9 /* Books.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -405,6 +428,24 @@
 				93192A5B2285736C00FA5089 /* ZHAnimationCell.m */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		932B3B4E228BE1AB00CE88EA /* ZHObject */ = {
+			isa = PBXGroup;
+			children = (
+				932B3B4F228BE1E400CE88EA /* ZHTextField.h */,
+				932B3B50228BE1E400CE88EA /* ZHTextField.m */,
+			);
+			path = ZHObject;
+			sourceTree = "<group>";
+		};
+		932B3B52228BF6C800CE88EA /* Three */ = {
+			isa = PBXGroup;
+			children = (
+				932B3B53228BF6F500CE88EA /* UITextField+ZHCategory.h */,
+				932B3B54228BF6F500CE88EA /* UITextField+ZHCategory.m */,
+			);
+			path = Three;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -623,14 +664,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932B3B58228C1C9300CE88EA /* ZHRealViewController.m in Sources */,
 				93109F18225F13C200DF5AA2 /* CityListViewController.m in Sources */,
 				930E4416226EA2D400EE3265 /* FFPlayerButton.m in Sources */,
 				93192A582285624900FA5089 /* ZHTestViewController.m in Sources */,
+				932B3B51228BE1E400CE88EA /* ZHTextField.m in Sources */,
 				93192A5222854ACC00FA5089 /* ReadOnlyModel.m in Sources */,
+				932B3B55228BF6F500CE88EA /* UITextField+ZHCategory.m in Sources */,
 				93023270216D9C4E009AF506 /* ViewController.m in Sources */,
+				93B7D449228C1EFB0034719E /* Student.m in Sources */,
 				93054E65227004B200F192F8 /* AnLineView.m in Sources */,
 				935F6A7621704AF40082D8F7 /* HotlListView.m in Sources */,
 				9319A14E22254C7D00FA05C2 /* ProblemOne.m in Sources */,
+				93B3AFFC228D4D62008FDBF9 /* Books.m in Sources */,
 				93145BBE2264614500B7A6DC /* AreaModel.m in Sources */,
 				930B56F2225C4C7D005EAD28 /* ZipViewController.m in Sources */,
 				93FA3178216DD28800F54F80 /* ClickViewController.m in Sources */,

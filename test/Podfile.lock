@@ -18,6 +18,9 @@ PODS:
   - Masonry (1.1.0)
   - MJExtension (3.0.15.1)
   - pop (1.0.11)
+  - Realm (3.13.1):
+    - Realm/Headers (= 3.13.1)
+  - Realm/Headers (3.13.1)
   - SDWebImage (4.4.5):
     - SDWebImage/Core (= 4.4.5)
   - SDWebImage/Core (4.4.5)
@@ -33,6 +36,7 @@ DEPENDENCIES:
   - Masonry
   - MJExtension
   - pop (from `https://github.com/facebook/pop.git`)
+  - Realm
   - SDWebImage
   - SSZipArchive
   - YYImage
@@ -44,6 +48,7 @@ SPEC REPOS:
     - DCURLRouter
     - Masonry
     - MJExtension
+    - Realm
     - SDWebImage
     - SSZipArchive
     - YYImage
@@ -64,11 +69,12 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   pop: ae3ae187018759968252242e175c21f7f9be5dd2
+  Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
   SDWebImage: ecc03494e973b93b80213649d32175f8d2d17d4d
   SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 3665d91b3e545bbb76a71de50a05998b92e3774e
+PODFILE CHECKSUM: 424ec4e00dc9c22bf4d827c17a0fb798a8e2b827
 
 COCOAPODS: 1.5.2

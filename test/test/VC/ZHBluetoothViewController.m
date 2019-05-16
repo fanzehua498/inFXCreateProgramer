@@ -8,6 +8,8 @@
 
 #import "ZHBluetoothViewController.h"
 #import "CircleSelectButtonView.h"
+#import "ZHTextField.h"
+#define kMaxLength 20
 
 CGColorSpaceRef ZHCGColorSpaceGetDeviceRGB(void) {
     static CGColorSpaceRef colorSpace;
@@ -40,7 +42,7 @@ BOOL ZHCGImageRefContainsAlpha1(CGImageRef imageRef){
     return hasAlpha;
 }
 
-@interface ZHBluetoothViewController ()
+@interface ZHBluetoothViewController ()<UITextFieldDelegate>
 
 @property (nonatomic,strong) UILabel *moveLabel;
 
@@ -48,6 +50,12 @@ BOOL ZHCGImageRefContainsAlpha1(CGImageRef imageRef){
 @end
 
 @implementation ZHBluetoothViewController
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -76,13 +84,37 @@ BOOL ZHCGImageRefContainsAlpha1(CGImageRef imageRef){
 
     [self.view addSubview:v];
     
-    
     NSNumberFormatter *fo = [[NSNumberFormatter alloc] init];
     fo.numberStyle = NSNumberFormatterPercentStyle;
     fo.groupingSize = 2;
     
-}
+    dispatch_queue_t queue = dispatch_queue_create("label", 0);
+    dispatch_queue_t queue1 = dispatch_queue_create("label1", 0);
+    dispatch_async(queue, ^{
+        // 这两个是同时执行的
+        NSLog(@"任务1, %@",[NSThread currentThread]);
+    });
+    dispatch_async(queue, ^{
+        NSLog(@"任务2, %@",[NSThread currentThread]);
+    });
+    dispatch_barrier_async(queue, ^{
+        NSLog(@"任务 barrier, %@", [NSThread currentThread]);
+    });
+    dispatch_async(queue1, ^{
+        // 这两个是同时执行的
+        NSLog(@"任务3, %@",[NSThread currentThread]);
+    });
+    dispatch_async(queue1, ^{
+        NSLog(@"任务4, %@",[NSThread currentThread]);
+    });
+    // 输出结果: 任务1 任务2 ——》 任务 barrier ——》任务3 任务4  // 其中的任务1与任务2，任务3与任务4 由于是并行处理先后顺序不定。
+    ZHTextField *field = [[ZHTextField alloc] initWithFrame:CGRectMake(100, 100, 100, 30) WithDelegate:self];
+    field.placeholder = @"placeholder";
+    field.MaxLength = 10;
+    field.type = FieldTypeChinese;
+    [self.view addSubview:field];
 
+}
 - (UIImage *)compressImageWith:(UIImage *)image
 {
     @autoreleasepool {
@@ -119,15 +151,4 @@ BOOL ZHCGImageRefContainsAlpha1(CGImageRef imageRef){
 {
 //    UIView animateKeyframesWithDuration:<#(NSTimeInterval)#> delay:<#(NSTimeInterval)#> options:(UIViewKeyframeAnimationOptions) animations:<#^(void)animations#> completion:<#^(BOOL finished)completion#>
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

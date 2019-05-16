@@ -10,5 +10,8 @@
 
 @implementation FFUIPageControlView (CatrgoryPage)
 
-
+//-(void)setupTimer
+//{
+//    NSLog(@"catttt setup");
+//}
 @end

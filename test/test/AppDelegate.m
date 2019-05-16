@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import <Realm.h>
+#import "Student.h"
+#import "Books.h"
+
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
 #import <UserNotifications/UserNotifications.h>
 #endif
@@ -21,7 +25,85 @@
     // Override point for customization after application launch.
     [self registerLocalNotification];
     [DCURLRouter loadConfigDictFromPlist:@"DCURLRouter.plist"];
+    [self dataVersion];
+//    [self bookData];
     return YES;
+}
+- (void)dataVersion
+{
+    //数据迁移
+    int newVersion = 12;
+    RLMRealmConfiguration *config = [RLMRealmConfiguration defaultConfiguration];
+    // 设置新的架构版本。这个版本号必须高于之前所用的版本号（如果您之前从未设置过架构版本，那么这个版本号设置为 0）
+    config.schemaVersion = newVersion;
+    config.migrationBlock = ^(RLMMigration *migration, uint64_t oldSchemaVersion) {
+        // 目前我们还未进行数据迁移，因此 oldSchemaVersion == 0
+        if (oldSchemaVersion <= newVersion) {
+            // 什么都不要做！Realm 会自行检测新增和需要移除的属性，然后自动更新硬盘上的数据库架构
+            NSLog(@"数据结构会自动迁移");
+            
+            // enumerateObjects:block: 遍历了存储在 Realm 文件中的每一个“Person”对象
+            [migration enumerateObjects:[Student className] block:^(RLMObject * _Nullable oldObject, RLMObject * _Nullable newObject) {
+                // 只有当 Realm 数据库的架构版本为 0 的时候，才添加 “fullName” 属性
+                if (oldSchemaVersion < 1) {
+                    newObject[@"fullName"] = [NSString stringWithFormat:@"%@ %@", oldObject[@"firstName"], oldObject[@"lastName"]];
+                }
+                // 只有当 Realm 数据库的架构版本为 0 或者 1 的时候，才添加“email”属性
+                if (oldSchemaVersion < 2) {
+                    newObject[@"email"] = @"";
+                }
+                
+            }];
+            // 替换属性名(原字段重命名)
+            if (oldSchemaVersion < 12) { // 重命名操作应该在调用 `enumerateObjects:` 之外完成
+                [migration renamePropertyForClass:[Student className] oldName:@"sex" newName:@"age"];
+            }
+        }
+    };
+    config.objectClasses = @[NSClassFromString(@"Student"),NSClassFromString(@"Books")];
+    [RLMRealmConfiguration setDefaultConfiguration:config];
+    [RLMRealm defaultRealm];
+    
+    //每次修改了数据的模型的时候 就需改一次schemaVersion属性（版本号 注意：版本号不能低于上一次的版本）
+}
+
+- (void)bookData
+{
+    RLMRealmConfiguration *config = [RLMRealmConfiguration defaultConfiguration];
+    //    config.readOnly = YES;
+    config.fileURL = [[[config.fileURL URLByDeletingLastPathComponent] URLByAppendingPathComponent:@"zehua"] URLByAppendingPathExtension:@"realm"];
+    
+    int newVersion = 0;
+    
+    // 设置新的架构版本。这个版本号必须高于之前所用的版本号（如果您之前从未设置过架构版本，那么这个版本号设置为 0）
+    config.schemaVersion = newVersion;
+    config.migrationBlock = ^(RLMMigration *migration, uint64_t oldSchemaVersion) {
+        // 目前我们还未进行数据迁移，因此 oldSchemaVersion == 0
+        if (oldSchemaVersion <= newVersion) {
+            // 什么都不要做！Realm 会自行检测新增和需要移除的属性，然后自动更新硬盘上的数据库架构
+            NSLog(@"数据结构会自动迁移");
+            
+            // enumerateObjects:block: 遍历了存储在 Realm 文件中的每一个“Person”对象
+            [migration enumerateObjects:[Books className] block:^(RLMObject * _Nullable oldObject, RLMObject * _Nullable newObject) {
+                // 只有当 Realm 数据库的架构版本为 0 的时候，才添加 “fullName” 属性
+//                if (oldSchemaVersion < 1) {
+//                    newObject[@"fullName"] = [NSString stringWithFormat:@"%@ %@", oldObject[@"firstName"], oldObject[@"lastName"]];
+//                }
+//                // 只有当 Realm 数据库的架构版本为 0 或者 1 的时候，才添加“email”属性
+//                if (oldSchemaVersion < 2) {
+//                    newObject[@"email"] = @"";
+//                }
+                
+            }];
+            // 替换属性名(原字段重命名)
+//            if (oldSchemaVersion < 12) { // 重命名操作应该在调用 `enumerateObjects:` 之外完成
+//                [migration renamePropertyForClass:[Student className] oldName:@"sex" newName:@"age"];
+//            }
+        }
+    };
+    [RLMRealmConfiguration setDefaultConfiguration:config];
+    [RLMRealm realmWithURL:config.fileURL];
+    
 }
 
 

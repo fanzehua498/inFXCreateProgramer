@@ -24,10 +24,26 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     NSMutableAttributedString * attrStr = [[NSMutableAttributedString alloc] initWithString:@"这是一个网址我是button字符串！"];
+    
+    
+    NSTextAttachment *attch = [[NSTextAttachment alloc] init];
+    // 表情图片
+    attch.image = [UIImage imageNamed:@"train_rob_icon"];
+    // 设置图片大小
+    attch.bounds = CGRectMake(0, -3, 14, 14);
+//    [attrStr addAttribute:NSForegroundColorAttributeName value:[UIColor redColor] range:[[attrStr string] rangeOfString:@"红"]];
+    
+    // 创建带有图片的富文本
+    NSAttributedString *string = [NSMutableAttributedString attributedStringWithAttachment:attch];
+    [attrStr appendAttributedString:string];
+    [attrStr appendAttributedString: [[NSAttributedString alloc]initWithString:@"查看图片"]];
     [attrStr addAttribute:NSLinkAttributeName
-                    value:@"我是button"
-                    range:NSMakeRange(6, attrStr.length -6 -4)];
-    UITextView *text = [[UITextView alloc] initWithFrame:CGRectMake(100, 220, 200, 200)];
+                    value:@"查看图片"
+                    range:NSMakeRange(attrStr.length-4, 4)];
+    
+    
+    
+    UITextView *text = [[UITextView alloc] initWithFrame:CGRectMake(100, 220, 220, 200)];
     text.attributedText = attrStr;
     text.delegate = self;
     text.editable = NO;
@@ -35,6 +51,7 @@
 }
 
 - (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange interaction:(UITextItemInteraction)interaction {
+    
     NSLog(@"%@ %@ %ld",URL,NSStringFromRange(characterRange),(long)interaction);
     return YES;
 }
@@ -70,22 +87,4 @@
         
     }];
 }
-
-
-#pragma mark - XML 解析
-- (void)loadXMLData
-{
-    
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end
