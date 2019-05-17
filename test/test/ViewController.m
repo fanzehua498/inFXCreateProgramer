@@ -48,6 +48,19 @@
        
         NSLog(@"%@--%@",notification,realm);
     }];
+    
+    
+    NSArray *array = @[];
+    NSString *str;
+    
+    @try {
+        <#Code that can potentially throw an exception#>
+    } @catch (NSException *exception) {
+        <#Handle an exception thrown in the @try block#>
+    } @finally {
+        <#Code that gets executed whether or not an exception is thrown#>
+    }
+    
 }
 -(void)dealloc
 {

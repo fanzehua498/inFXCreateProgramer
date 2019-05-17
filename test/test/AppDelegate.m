@@ -61,6 +61,7 @@
         }
     };
     config.objectClasses = @[NSClassFromString(@"Student"),NSClassFromString(@"Books")];
+    config.inMemoryIdentifier = @"memory";//配置内存数据库，应用杀死之后数据不会保存。
     [RLMRealmConfiguration setDefaultConfiguration:config];
     [RLMRealm defaultRealm];
     

@@ -134,10 +134,6 @@
 
 - (void)setDefaultRealm:(NSString *)userName
 {
-    RLMRealmConfiguration *config = [RLMRealmConfiguration defaultConfiguration];
-//    config.readOnly = YES;
-    config.fileURL = [[[config.fileURL URLByDeletingLastPathComponent] URLByAppendingPathComponent:userName] URLByAppendingPathExtension:@"realm"];
-    [RLMRealmConfiguration setDefaultConfiguration:config];
-    [RLMRealm realmWithURL:config.fileURL];
+   	
 }
 @end
