@@ -9,7 +9,7 @@
 	<key>provisioningProfiles</key>
 	<dict>
 		<key>com.coinyee.trip</key>
-		<string>autoReleaseVVVV</string>
+		<string>934ad6aa-e86a-466d-b6f6-00402e0b02dc</string>
 	</dict>
 	<key>method</key>
 	<string>ad-hoc</string>

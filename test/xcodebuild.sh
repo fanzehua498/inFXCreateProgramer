@@ -15,7 +15,7 @@ AppStoreBundleID="com.coinyee.trip"
 
 # ADHOC证书名#描述文件
 ADHOCCODE_SIGN_IDENTITY="iPhone Distribution: qiang li"
-ADHOCPROVISIONING_PROFILE_NAME="autoRelease"
+ADHOCPROVISIONING_PROFILE_NAME="934ad6aa-e86a-466d-b6f6-00402e0b02dc"
 
 #AppStore证书名#描述文件
 #APPSTORECODE_SIGN_IDENTITY="iPhone Distribution: xxxxx"
@@ -49,6 +49,8 @@ if [ -n "$method" ]
 then
     if [ "$method" = "1" ]
     then
+#clean下
+xcodebuild clean -xcodeproj ./$Project_Name/$Project_Name.xcodeproj -configuration $Configuration -alltargets
 #adhoc脚本
 xcodebuild -workspace $Workspace_Name.xcworkspace -scheme $Project_Name -configuration $Configuration -archivePath build/$Project_Name-adhoc.xcarchive clean archive build CODE_SIGN_IDENTITY="${ADHOCCODE_SIGN_IDENTITY}" PROVISIONING_PROFILE="${ADHOCPROVISIONING_PROFILE_NAME}" PRODUCT_BUNDLE_IDENTIFIER="${AdHocBundleID}"
 xcodebuild  -exportArchive -archivePath build/$Project_Name-adhoc.xcarchive -exportOptionsPlist ${ADHOCExportOptionsPlist} -exportPath ~/Desktop/$Project_Name-adhoc.ipa
