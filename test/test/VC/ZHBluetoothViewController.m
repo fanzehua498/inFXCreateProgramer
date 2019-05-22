@@ -80,10 +80,10 @@ BOOL ZHCGImageRefContainsAlpha1(CGImageRef imageRef){
 //    UIImageView *imageVIew1 = [[UIImageView alloc] initWithFrame:CGRectMake(100, 300, 100, 100)];
 //    [self.view addSubview:imageVIew1];
 //    imageVIew1.image = image;
-    CircleSelectButtonView *v = [[CircleSelectButtonView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, Screenheight)];
-
+    CircleSelectButtonView *v = [[CircleSelectButtonView alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, Screenheight)];
+   
     [self.view addSubview:v];
-    
+   
     NSNumberFormatter *fo = [[NSNumberFormatter alloc] init];
     fo.numberStyle = NSNumberFormatterPercentStyle;
     fo.groupingSize = 2;
@@ -112,7 +112,7 @@ BOOL ZHCGImageRefContainsAlpha1(CGImageRef imageRef){
     field.placeholder = @"placeholder";
     field.MaxLength = 10;
     field.type = FieldTypeChinese;
-    [self.view addSubview:field];
+//    [self.view addSubview:field];
 
 }
 - (UIImage *)compressImageWith:(UIImage *)image
@@ -150,5 +150,7 @@ BOOL ZHCGImageRefContainsAlpha1(CGImageRef imageRef){
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
 //    UIView animateKeyframesWithDuration:<#(NSTimeInterval)#> delay:<#(NSTimeInterval)#> options:(UIViewKeyframeAnimationOptions) animations:<#^(void)animations#> completion:<#^(BOOL finished)completion#>
+    
+    
 }
 @end

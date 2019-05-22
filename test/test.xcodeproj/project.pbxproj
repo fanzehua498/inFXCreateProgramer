@@ -21,6 +21,7 @@
 		93054960225B20490083754F /* AppTestFrameWorkSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9305495F225B20490083754F /* AppTestFrameWorkSDK.framework */; };
 		93054E65227004B200F192F8 /* AnLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93054E64227004B200F192F8 /* AnLineView.m */; };
 		9306D460216F41E800B9A5D1 /* SiftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9306D45F216F41E800B9A5D1 /* SiftView.m */; };
+		930A7A6122923EF400906F69 /* specialShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 930A7A6022923EF400906F69 /* specialShapeView.m */; };
 		930B56F2225C4C7D005EAD28 /* ZipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930B56F1225C4C7D005EAD28 /* ZipViewController.m */; };
 		930B56F4225C6150005EAD28 /* zzzzzzz.zip in Resources */ = {isa = PBXBuildFile; fileRef = 930B56F3225C6150005EAD28 /* zzzzzzz.zip */; };
 		930E4416226EA2D400EE3265 /* FFPlayerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 930E4415226EA2D400EE3265 /* FFPlayerButton.m */; };
@@ -60,6 +61,8 @@
 		932B3B51228BE1E400CE88EA /* ZHTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 932B3B50228BE1E400CE88EA /* ZHTextField.m */; };
 		932B3B55228BF6F500CE88EA /* UITextField+ZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 932B3B54228BF6F500CE88EA /* UITextField+ZHCategory.m */; };
 		932B3B58228C1C9300CE88EA /* ZHRealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 932B3B57228C1C9300CE88EA /* ZHRealViewController.m */; };
+		9358642B2293F0EC00E6B115 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 9358642A2293F0EC00E6B115 /* NSString+Category.m */; };
+		9358642E2293F87D00E6B115 /* ZHVerifyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9358642D2293F87D00E6B115 /* ZHVerifyView.m */; };
 		935F6A7621704AF40082D8F7 /* HotlListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 935F6A7521704AF40082D8F7 /* HotlListView.m */; };
 		935F6A79217076BC0082D8F7 /* CityListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 935F6A78217076BC0082D8F7 /* CityListView.m */; };
 		93B3AFFC228D4D62008FDBF9 /* Books.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B3AFFB228D4D62008FDBF9 /* Books.m */; };
@@ -115,6 +118,10 @@
 		93054E64227004B200F192F8 /* AnLineView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnLineView.m; sourceTree = "<group>"; };
 		9306D45E216F41E800B9A5D1 /* SiftView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SiftView.h; sourceTree = "<group>"; };
 		9306D45F216F41E800B9A5D1 /* SiftView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SiftView.m; sourceTree = "<group>"; };
+		930A7A5F22923EF400906F69 /* specialShapeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = specialShapeView.h; sourceTree = "<group>"; };
+		930A7A6022923EF400906F69 /* specialShapeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = specialShapeView.m; sourceTree = "<group>"; };
+		930A7A6522929E8800906F69 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		930A7A6622929E8800906F69 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		930B56F0225C4C7D005EAD28 /* ZipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZipViewController.h; sourceTree = "<group>"; };
 		930B56F1225C4C7D005EAD28 /* ZipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZipViewController.m; sourceTree = "<group>"; };
 		930B56F3225C6150005EAD28 /* zzzzzzz.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = zzzzzzz.zip; sourceTree = "<group>"; };
@@ -160,6 +167,10 @@
 		932B3B54228BF6F500CE88EA /* UITextField+ZHCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ZHCategory.m"; sourceTree = "<group>"; };
 		932B3B56228C1C9300CE88EA /* ZHRealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHRealViewController.h; sourceTree = "<group>"; };
 		932B3B57228C1C9300CE88EA /* ZHRealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHRealViewController.m; sourceTree = "<group>"; };
+		935864292293F0EC00E6B115 /* NSString+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
+		9358642A2293F0EC00E6B115 /* NSString+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Category.m"; sourceTree = "<group>"; };
+		9358642C2293F87D00E6B115 /* ZHVerifyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHVerifyView.h; sourceTree = "<group>"; };
+		9358642D2293F87D00E6B115 /* ZHVerifyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHVerifyView.m; sourceTree = "<group>"; };
 		935F6A7421704AF40082D8F7 /* HotlListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HotlListView.h; sourceTree = "<group>"; };
 		935F6A7521704AF40082D8F7 /* HotlListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HotlListView.m; sourceTree = "<group>"; };
 		935F6A77217076BC0082D8F7 /* CityListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityListView.h; sourceTree = "<group>"; };
@@ -409,6 +420,8 @@
 				9311CD712282D04D0049A7A2 /* FFPageCountView.m */,
 				93C64FE722896ECE009B6109 /* CircleSelectButtonView.h */,
 				93C64FE822896ECE009B6109 /* CircleSelectButtonView.m */,
+				930A7A5F22923EF400906F69 /* specialShapeView.h */,
+				930A7A6022923EF400906F69 /* specialShapeView.m */,
 			);
 			path = Two;
 			sourceTree = "<group>";
@@ -422,6 +435,8 @@
 				9311CD782282DC030049A7A2 /* FFUIPageControlView+CatrgoryPage.m */,
 				93B3AFFD228D666F008FDBF9 /* UIApplication+Memory.h */,
 				93B3AFFE228D666F008FDBF9 /* UIApplication+Memory.m */,
+				935864292293F0EC00E6B115 /* NSString+Category.h */,
+				9358642A2293F0EC00E6B115 /* NSString+Category.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -449,6 +464,8 @@
 			children = (
 				932B3B53228BF6F500CE88EA /* UITextField+ZHCategory.h */,
 				932B3B54228BF6F500CE88EA /* UITextField+ZHCategory.m */,
+				9358642C2293F87D00E6B115 /* ZHVerifyView.h */,
+				9358642D2293F87D00E6B115 /* ZHVerifyView.m */,
 			);
 			path = Three;
 			sourceTree = "<group>";
@@ -534,8 +551,9 @@
 		93023260216D9C4E009AF506 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = ZH;
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = rrjj;
+				ORGANIZATIONNAME = "真羡慕你们这些长的好看的";
 				TargetAttributes = {
 					93023267216D9C4E009AF506 = {
 						CreatedOnToolsVersion = 10.0;
@@ -562,6 +580,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 9302325F216D9C4E009AF506;
 			productRefGroup = 93023269216D9C4E009AF506 /* Products */;
@@ -680,6 +699,7 @@
 				93B7D449228C1EFB0034719E /* Student.m in Sources */,
 				93054E65227004B200F192F8 /* AnLineView.m in Sources */,
 				935F6A7621704AF40082D8F7 /* HotlListView.m in Sources */,
+				9358642B2293F0EC00E6B115 /* NSString+Category.m in Sources */,
 				9319A14E22254C7D00FA05C2 /* ProblemOne.m in Sources */,
 				93B3AFFC228D4D62008FDBF9 /* Books.m in Sources */,
 				93145BBE2264614500B7A6DC /* AreaModel.m in Sources */,
@@ -693,7 +713,9 @@
 				93192A5C2285736C00FA5089 /* ZHAnimationCell.m in Sources */,
 				93B3AFFF228D666F008FDBF9 /* UIApplication+Memory.m in Sources */,
 				9302326D216D9C4E009AF506 /* AppDelegate.m in Sources */,
+				930A7A6122923EF400906F69 /* specialShapeView.m in Sources */,
 				935F6A79217076BC0082D8F7 /* CityListView.m in Sources */,
+				9358642E2293F87D00E6B115 /* ZHVerifyView.m in Sources */,
 				9311CD792282DC030049A7A2 /* FFUIPageControlView+CatrgoryPage.m in Sources */,
 				9311CD762282DB270049A7A2 /* UIView+FirstCategoryView.m in Sources */,
 				9311CD6F2282A6550049A7A2 /* FFUIPageControlView.m in Sources */,
@@ -753,6 +775,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				93023272216D9C4E009AF506 /* Base */,
+				930A7A6522929E8800906F69 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -761,6 +784,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				93023277216D9C4F009AF506 /* Base */,
+				930A7A6622929E8800906F69 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -772,6 +796,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -831,6 +856,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

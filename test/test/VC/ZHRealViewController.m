@@ -10,7 +10,10 @@
 #import "Student.h"
 #import <Realm.h>
 #import "Books.h"
+#import "specialShapeView.h"
+#import "NSString+Category.h"
 @interface ZHRealViewController ()
+@property (nonatomic,strong) specialShapeView *specView;
 
 @end
 
@@ -25,6 +28,7 @@
     RLMRealmConfiguration *config = [RLMRealmConfiguration defaultConfiguration];
     //修改路径（删除后两个路径path）
     NSLog(@"%@",config.fileURL);
+
 }
 
 - (void)readRealmObj
@@ -124,11 +128,12 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    [self reChange];
-    
-    [self setDefaultRealm:@"zehua"];
+//    [self reChange];
+//    
+//    [self setDefaultRealm:@"zehua"];
     
     NSLog(@"%@",[RLMRealmConfiguration defaultConfiguration].fileURL);
+    NSLog(@"%@",[NSString getRandomChinese:4]);
 //    RLMRealm
 }
 
