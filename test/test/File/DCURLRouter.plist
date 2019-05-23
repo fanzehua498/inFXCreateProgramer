@@ -8,6 +8,8 @@
 	<string>WebViewController</string>
 	<key>ZHTest</key>
 	<dict>
+		<key>ZHTest://viewmodelvc</key>
+		<string>ZHViewModelController</string>
 		<key>ZHTest://realmvc</key>
 		<string>ZHRealViewController</string>
 		<key>ZHTest://citylist</key>

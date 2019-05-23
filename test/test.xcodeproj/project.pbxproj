@@ -25,6 +25,12 @@
 		930B56F2225C4C7D005EAD28 /* ZipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930B56F1225C4C7D005EAD28 /* ZipViewController.m */; };
 		930B56F4225C6150005EAD28 /* zzzzzzz.zip in Resources */ = {isa = PBXBuildFile; fileRef = 930B56F3225C6150005EAD28 /* zzzzzzz.zip */; };
 		930E4416226EA2D400EE3265 /* FFPlayerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 930E4415226EA2D400EE3265 /* FFPlayerButton.m */; };
+		930F0BDF2294E0CF00014377 /* empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930F0BDE2294E0CF00014377 /* empty.swift */; };
+		930F0BE32294E15C00014377 /* ZHViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F0BE22294E15C00014377 /* ZHViewModel.m */; };
+		930F0BE52294E6B100014377 /* libReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 930F0BE42294E6B100014377 /* libReactiveCocoa.a */; };
+		930F0BE82294EDBD00014377 /* ZHViewModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F0BE72294EDBD00014377 /* ZHViewModelController.m */; };
+		930F0BEE2295489000014377 /* ZHRacModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F0BED2295489000014377 /* ZHRacModel.m */; };
+		930F0BF022954FF700014377 /* RactiveCocoa in Resources */ = {isa = PBXBuildFile; fileRef = 930F0BEF22954FF700014377 /* RactiveCocoa */; };
 		930F50CD22433404006DE42D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9302326F216D9C4E009AF506 /* ViewController.m */; };
 		930F50CE22433404006DE42D /* HotlListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 935F6A7521704AF40082D8F7 /* HotlListView.m */; };
 		930F50CF22433404006DE42D /* ProblemOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 9319A14D22254C7D00FA05C2 /* ProblemOne.m */; };
@@ -127,6 +133,16 @@
 		930B56F3225C6150005EAD28 /* zzzzzzz.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = zzzzzzz.zip; sourceTree = "<group>"; };
 		930E4414226EA2D400EE3265 /* FFPlayerButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFPlayerButton.h; sourceTree = "<group>"; };
 		930E4415226EA2D400EE3265 /* FFPlayerButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPlayerButton.m; sourceTree = "<group>"; };
+		930F0BDB2294E02000014377 /* test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-Bridging-Header.h"; sourceTree = "<group>"; };
+		930F0BDE2294E0CF00014377 /* empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empty.swift; sourceTree = "<group>"; };
+		930F0BE12294E15C00014377 /* ZHViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHViewModel.h; sourceTree = "<group>"; };
+		930F0BE22294E15C00014377 /* ZHViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHViewModel.m; sourceTree = "<group>"; };
+		930F0BE42294E6B100014377 /* libReactiveCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReactiveCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		930F0BE62294EDBD00014377 /* ZHViewModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHViewModelController.h; sourceTree = "<group>"; };
+		930F0BE72294EDBD00014377 /* ZHViewModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHViewModelController.m; sourceTree = "<group>"; };
+		930F0BEC2295489000014377 /* ZHRacModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHRacModel.h; sourceTree = "<group>"; };
+		930F0BED2295489000014377 /* ZHRacModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHRacModel.m; sourceTree = "<group>"; };
+		930F0BEF22954FF700014377 /* RactiveCocoa */ = {isa = PBXFileReference; lastKnownFileType = text; path = RactiveCocoa; sourceTree = "<group>"; };
 		930F50E022433404006DE42D /* Customer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Customer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		930F50E122433404006DE42D /* Customer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Customer-Info.plist"; path = "/Users/rrjj/Desktop/test/test/Customer-Info.plist"; sourceTree = "<absolute>"; };
 		93109F10225EE2D000DF5AA2 /* CustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
@@ -199,6 +215,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				930F0BE52294E6B100014377 /* libReactiveCocoa.a in Frameworks */,
 				93C1030E225B485100C1BA7C /* ShellSDK.framework in Frameworks */,
 				93054960225B20490083754F /* AppTestFrameWorkSDK.framework in Frameworks */,
 				9305495E225B1FBF0083754F /* AppTestFrameWorkSDK.framework in Frameworks */,
@@ -234,6 +251,7 @@
 		247CE1DCA09E21B44332A080 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				930F0BE42294E6B100014377 /* libReactiveCocoa.a */,
 				9305495D225B1FBF0083754F /* AppTestFrameWorkSDK.framework */,
 				E4F4E1D3F7C9FC7E0ADB83C8 /* libPods-Customer.a */,
 				CD917004070E62FED989DFD6 /* libPods-test.a */,
@@ -337,9 +355,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		930F0BE02294E13B00014377 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				930F0BE12294E15C00014377 /* ZHViewModel.h */,
+				930F0BE22294E15C00014377 /* ZHViewModel.m */,
+				930F0BEC2295489000014377 /* ZHRacModel.h */,
+				930F0BED2295489000014377 /* ZHRacModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		9311CD672282A3EB0049A7A2 /* File */ = {
 			isa = PBXGroup;
 			children = (
+				930F0BDB2294E02000014377 /* test-Bridging-Header.h */,
+				930F0BDE2294E0CF00014377 /* empty.swift */,
 				93109F13225F115800DF5AA2 /* MTcityList.xml */,
 				930B56F3225C6150005EAD28 /* zzzzzzz.zip */,
 				9313CA6322817F2400C59C9C /* logo_img_01@2x.png */,
@@ -350,6 +381,7 @@
 				9313CA6122817F2300C59C9C /* sound02.wav */,
 				93192A5322854E2700FA5089 /* DCURLRouter.plist */,
 				93192A5522854F6500FA5089 /* PrefixHeader.pch */,
+				930F0BEF22954FF700014377 /* RactiveCocoa */,
 			);
 			path = File;
 			sourceTree = "<group>";
@@ -371,6 +403,8 @@
 				93C64FE522890363009B6109 /* ZHBluetoothViewController.m */,
 				932B3B56228C1C9300CE88EA /* ZHRealViewController.h */,
 				932B3B57228C1C9300CE88EA /* ZHRealViewController.m */,
+				930F0BE62294EDBD00014377 /* ZHViewModelController.h */,
+				930F0BE72294EDBD00014377 /* ZHViewModelController.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -395,6 +429,7 @@
 		9311CD6B2282A4600049A7A2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				930F0BE02294E13B00014377 /* ViewModel */,
 				93145BBC2264614400B7A6DC /* AreaModel.h */,
 				93145BBD2264614400B7A6DC /* AreaModel.m */,
 				93192A5022854ACC00FA5089 /* ReadOnlyModel.h */,
@@ -557,6 +592,7 @@
 				TargetAttributes = {
 					93023267216D9C4E009AF506 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -601,6 +637,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93023278216D9C4F009AF506 /* LaunchScreen.storyboard in Resources */,
+				930F0BF022954FF700014377 /* RactiveCocoa in Resources */,
 				9313CA6B22817F2400C59C9C /* sound01.wav in Resources */,
 				9313CA6A22817F2400C59C9C /* logo_img_02@2x.png in Resources */,
 				93FA3179216DD28800F54F80 /* ClickViewController.xib in Resources */,
@@ -692,6 +729,7 @@
 				93109F18225F13C200DF5AA2 /* CityListViewController.m in Sources */,
 				930E4416226EA2D400EE3265 /* FFPlayerButton.m in Sources */,
 				93192A582285624900FA5089 /* ZHTestViewController.m in Sources */,
+				930F0BE32294E15C00014377 /* ZHViewModel.m in Sources */,
 				932B3B51228BE1E400CE88EA /* ZHTextField.m in Sources */,
 				93192A5222854ACC00FA5089 /* ReadOnlyModel.m in Sources */,
 				932B3B55228BF6F500CE88EA /* UITextField+ZHCategory.m in Sources */,
@@ -708,6 +746,7 @@
 				93C64FE922896ECE009B6109 /* CircleSelectButtonView.m in Sources */,
 				9311CD722282D04D0049A7A2 /* FFPageCountView.m in Sources */,
 				93109F12225EE2D000DF5AA2 /* CustomView.m in Sources */,
+				930F0BE82294EDBD00014377 /* ZHViewModelController.m in Sources */,
 				9306D460216F41E800B9A5D1 /* SiftView.m in Sources */,
 				9302327B216D9C4F009AF506 /* main.m in Sources */,
 				93192A5C2285736C00FA5089 /* ZHAnimationCell.m in Sources */,
@@ -717,6 +756,8 @@
 				935F6A79217076BC0082D8F7 /* CityListView.m in Sources */,
 				9358642E2293F87D00E6B115 /* ZHVerifyView.m in Sources */,
 				9311CD792282DC030049A7A2 /* FFUIPageControlView+CatrgoryPage.m in Sources */,
+				930F0BDF2294E0CF00014377 /* empty.swift in Sources */,
+				930F0BEE2295489000014377 /* ZHRacModel.m in Sources */,
 				9311CD762282DB270049A7A2 /* UIView+FirstCategoryView.m in Sources */,
 				9311CD6F2282A6550049A7A2 /* FFUIPageControlView.m in Sources */,
 				93C64FE622890363009B6109 /* ZHBluetoothViewController.m in Sources */,
@@ -911,6 +952,7 @@
 			baseConfigurationReference = D816C08FF07DED0961BD1893 /* Pods-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = S84G648KD2;
@@ -925,6 +967,21 @@
 					"$(inherited)",
 					"TargetType=2",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/DCURLRouter\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/Realm\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SSZipArchive\"",
+					"\"${PODS_ROOT}/Headers/Public/YYImage\"",
+					"\"${PODS_ROOT}/Headers/Public/YYModel\"",
+					"\"${PODS_ROOT}/Headers/Public/pop\"",
+				);
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -933,6 +990,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.coinyee.trip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "autoRelease描述文件";
+				SWIFT_OBJC_BRIDGING_HEADER = "test/File/test-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -942,6 +1002,7 @@
 			baseConfigurationReference = 3BB0A346ADFD5C145603AC23 /* Pods-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = S84G648KD2;
@@ -952,6 +1013,21 @@
 				);
 				GCC_PREFIX_HEADER = test/File/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TargetType=2";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/DCURLRouter\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/Realm\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SSZipArchive\"",
+					"\"${PODS_ROOT}/Headers/Public/YYImage\"",
+					"\"${PODS_ROOT}/Headers/Public/YYModel\"",
+					"\"${PODS_ROOT}/Headers/Public/pop\"",
+				);
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -960,6 +1036,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.coinyee.trip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "autoRelease描述文件";
+				SWIFT_OBJC_BRIDGING_HEADER = "test/File/test-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -967,6 +1045,7 @@
 		93023298216D9C4F009AF506 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = testTests/Info.plist;
@@ -985,6 +1064,7 @@
 		93023299216D9C4F009AF506 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = testTests/Info.plist;
@@ -1003,6 +1083,7 @@
 		9302329B216D9C4F009AF506 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = testUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1020,6 +1101,7 @@
 		9302329C216D9C4F009AF506 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = testUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

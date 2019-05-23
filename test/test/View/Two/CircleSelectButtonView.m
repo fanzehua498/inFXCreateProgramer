@@ -88,6 +88,7 @@
     label.textAlignment = NSTextAlignmentCenter;
     label.text = [NSString stringWithFormat:@"模块 %ld",pathNum];
     [self addSubview:label];
+    
     switch (pathNum) {
         case 1:
             self.path1 = path;

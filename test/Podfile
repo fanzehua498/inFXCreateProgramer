@@ -10,6 +10,7 @@ def common_Pods
 	pod 'SDWebImage'
 	pod 'YYImage'
 	pod 'Realm'
+	pod 'ReactiveCocoa','2.5'
 end
 
 target 'test' do
