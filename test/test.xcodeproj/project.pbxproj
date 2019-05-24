@@ -50,7 +50,6 @@
 		9311CD6A2282A4500049A7A2 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93109F11225EE2D000DF5AA2 /* CustomView.m */; };
 		9311CD6F2282A6550049A7A2 /* FFUIPageControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9311CD6E2282A6550049A7A2 /* FFUIPageControlView.m */; };
 		9311CD722282D04D0049A7A2 /* FFPageCountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9311CD712282D04D0049A7A2 /* FFPageCountView.m */; };
-		9311CD762282DB270049A7A2 /* UIView+FirstCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9311CD752282DB270049A7A2 /* UIView+FirstCategoryView.m */; };
 		9311CD792282DC030049A7A2 /* FFUIPageControlView+CatrgoryPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9311CD782282DC030049A7A2 /* FFUIPageControlView+CatrgoryPage.m */; };
 		9313CA6622817F2400C59C9C /* logo_img_02@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9313CA6022817F2300C59C9C /* logo_img_02@3x.png */; };
 		9313CA6722817F2400C59C9C /* sound02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9313CA6122817F2300C59C9C /* sound02.wav */; };
@@ -64,6 +63,69 @@
 		93192A582285624900FA5089 /* ZHTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93192A572285624900FA5089 /* ZHTestViewController.m */; };
 		93192A5C2285736C00FA5089 /* ZHAnimationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93192A5B2285736C00FA5089 /* ZHAnimationCell.m */; };
 		9319A14E22254C7D00FA05C2 /* ProblemOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 9319A14D22254C7D00FA05C2 /* ProblemOne.m */; };
+		931C401422977BC5007555A9 /* ZHRealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 932B3B57228C1C9300CE88EA /* ZHRealViewController.m */; };
+		931C401522977BC5007555A9 /* CityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93109F16225F13C200DF5AA2 /* CityListViewController.m */; };
+		931C401622977BC5007555A9 /* FFPlayerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 930E4415226EA2D400EE3265 /* FFPlayerButton.m */; };
+		931C401722977BC5007555A9 /* ZHTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93192A572285624900FA5089 /* ZHTestViewController.m */; };
+		931C401822977BC5007555A9 /* ZHViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F0BE22294E15C00014377 /* ZHViewModel.m */; };
+		931C401922977BC5007555A9 /* ZHTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 932B3B50228BE1E400CE88EA /* ZHTextField.m */; };
+		931C401A22977BC5007555A9 /* ReadOnlyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93192A5122854ACC00FA5089 /* ReadOnlyModel.m */; };
+		931C401B22977BC5007555A9 /* UITextField+ZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 932B3B54228BF6F500CE88EA /* UITextField+ZHCategory.m */; };
+		931C401C22977BC5007555A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9302326F216D9C4E009AF506 /* ViewController.m */; };
+		931C401D22977BC5007555A9 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B7D448228C1EFB0034719E /* Student.m */; };
+		931C401E22977BC5007555A9 /* AnLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93054E64227004B200F192F8 /* AnLineView.m */; };
+		931C401F22977BC5007555A9 /* HotlListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 935F6A7521704AF40082D8F7 /* HotlListView.m */; };
+		931C402022977BC5007555A9 /* NSString+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 9358642A2293F0EC00E6B115 /* NSString+Category.m */; };
+		931C402122977BC5007555A9 /* ProblemOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 9319A14D22254C7D00FA05C2 /* ProblemOne.m */; };
+		931C402222977BC5007555A9 /* Books.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B3AFFB228D4D62008FDBF9 /* Books.m */; };
+		931C402322977BC5007555A9 /* AreaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93145BBD2264614400B7A6DC /* AreaModel.m */; };
+		931C402422977BC5007555A9 /* ZipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930B56F1225C4C7D005EAD28 /* ZipViewController.m */; };
+		931C402522977BC5007555A9 /* ClickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FA3176216DD28800F54F80 /* ClickViewController.m */; };
+		931C402622977BC5007555A9 /* CircleSelectButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C64FE822896ECE009B6109 /* CircleSelectButtonView.m */; };
+		931C402722977BC5007555A9 /* FFPageCountView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9311CD712282D04D0049A7A2 /* FFPageCountView.m */; };
+		931C402822977BC5007555A9 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93109F11225EE2D000DF5AA2 /* CustomView.m */; };
+		931C402922977BC5007555A9 /* ZHViewModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F0BE72294EDBD00014377 /* ZHViewModelController.m */; };
+		931C402A22977BC5007555A9 /* SiftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9306D45F216F41E800B9A5D1 /* SiftView.m */; };
+		931C402B22977BC5007555A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9302327A216D9C4F009AF506 /* main.m */; };
+		931C402C22977BC5007555A9 /* ZHAnimationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93192A5B2285736C00FA5089 /* ZHAnimationCell.m */; };
+		931C402D22977BC5007555A9 /* UIApplication+Memory.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B3AFFE228D666F008FDBF9 /* UIApplication+Memory.m */; };
+		931C402E22977BC5007555A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9302326C216D9C4E009AF506 /* AppDelegate.m */; };
+		931C402F22977BC5007555A9 /* specialShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 930A7A6022923EF400906F69 /* specialShapeView.m */; };
+		931C403022977BC5007555A9 /* CityListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 935F6A78217076BC0082D8F7 /* CityListView.m */; };
+		931C403122977BC5007555A9 /* ZHVerifyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9358642D2293F87D00E6B115 /* ZHVerifyView.m */; };
+		931C403222977BC5007555A9 /* FFUIPageControlView+CatrgoryPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9311CD782282DC030049A7A2 /* FFUIPageControlView+CatrgoryPage.m */; };
+		931C403322977BC5007555A9 /* empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930F0BDE2294E0CF00014377 /* empty.swift */; };
+		931C403422977BC5007555A9 /* ZHRacModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 930F0BED2295489000014377 /* ZHRacModel.m */; };
+		931C403622977BC5007555A9 /* FFUIPageControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9311CD6E2282A6550049A7A2 /* FFUIPageControlView.m */; };
+		931C403722977BC5007555A9 /* ZHBluetoothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C64FE522890363009B6109 /* ZHBluetoothViewController.m */; };
+		931C403922977BC5007555A9 /* libReactiveCocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 930F0BE42294E6B100014377 /* libReactiveCocoa.a */; };
+		931C403A22977BC5007555A9 /* ShellSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C1030D225B485100C1BA7C /* ShellSDK.framework */; };
+		931C403B22977BC5007555A9 /* AppTestFrameWorkSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9305495F225B20490083754F /* AppTestFrameWorkSDK.framework */; };
+		931C403C22977BC5007555A9 /* AppTestFrameWorkSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9305495D225B1FBF0083754F /* AppTestFrameWorkSDK.framework */; };
+		931C403D22977BC5007555A9 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD917004070E62FED989DFD6 /* libPods-test.a */; };
+		931C403F22977BC5007555A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93023276216D9C4F009AF506 /* LaunchScreen.storyboard */; };
+		931C404022977BC5007555A9 /* RactiveCocoa in Resources */ = {isa = PBXBuildFile; fileRef = 930F0BEF22954FF700014377 /* RactiveCocoa */; };
+		931C404122977BC5007555A9 /* sound01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9313CA6522817F2400C59C9C /* sound01.wav */; };
+		931C404222977BC5007555A9 /* logo_img_02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9313CA6422817F2400C59C9C /* logo_img_02@2x.png */; };
+		931C404322977BC5007555A9 /* ClickViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93FA3177216DD28800F54F80 /* ClickViewController.xib */; };
+		931C404422977BC5007555A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93023274216D9C4F009AF506 /* Assets.xcassets */; };
+		931C404522977BC5007555A9 /* logo_img_01@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9313CA6222817F2400C59C9C /* logo_img_01@3x.png */; };
+		931C404622977BC5007555A9 /* DCURLRouter.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93192A5322854E2700FA5089 /* DCURLRouter.plist */; };
+		931C404722977BC5007555A9 /* MTcityList.xml in Resources */ = {isa = PBXBuildFile; fileRef = 93109F13225F115800DF5AA2 /* MTcityList.xml */; };
+		931C404822977BC5007555A9 /* CityListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93109F17225F13C200DF5AA2 /* CityListViewController.xib */; };
+		931C404922977BC5007555A9 /* sound02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 9313CA6122817F2300C59C9C /* sound02.wav */; };
+		931C404A22977BC5007555A9 /* logo_img_01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9313CA6322817F2400C59C9C /* logo_img_01@2x.png */; };
+		931C404B22977BC5007555A9 /* zzzzzzz.zip in Resources */ = {isa = PBXBuildFile; fileRef = 930B56F3225C6150005EAD28 /* zzzzzzz.zip */; };
+		931C404C22977BC5007555A9 /* logo_img_02@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9313CA6022817F2300C59C9C /* logo_img_02@3x.png */; };
+		931C404D22977BC5007555A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93023271216D9C4E009AF506 /* Main.storyboard */; };
+		931C4057229781C7007555A9 /* ZHFoundation+log.m in Sources */ = {isa = PBXBuildFile; fileRef = 931C4056229781C7007555A9 /* ZHFoundation+log.m */; };
+		931C405A22978A51007555A9 /* UIView+ZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 931C405922978A51007555A9 /* UIView+ZHCategory.m */; };
+		931C405D2297970F007555A9 /* ZHArchiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 931C405C2297970F007555A9 /* ZHArchiveModel.m */; };
+		931C4060229798D3007555A9 /* ZHExtentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 931C405F229798D3007555A9 /* ZHExtentionViewController.m */; };
+		931C406322979FB4007555A9 /* ZHSubArcModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 931C406222979FB4007555A9 /* ZHSubArcModel.m */; };
+		931C40652297B7A4007555A9 /* KnowledgePoint in Resources */ = {isa = PBXBuildFile; fileRef = 931C40642297B7A4007555A9 /* KnowledgePoint */; };
+		931C40682297CDD8007555A9 /* KnowShell in Resources */ = {isa = PBXBuildFile; fileRef = 931C40672297CDD8007555A9 /* KnowShell */; };
+		931C406A22980BC8007555A9 /* abc.sh in Resources */ = {isa = PBXBuildFile; fileRef = 931C406922980BC8007555A9 /* abc.sh */; };
 		932B3B51228BE1E400CE88EA /* ZHTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 932B3B50228BE1E400CE88EA /* ZHTextField.m */; };
 		932B3B55228BF6F500CE88EA /* UITextField+ZHCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 932B3B54228BF6F500CE88EA /* UITextField+ZHCategory.m */; };
 		932B3B58228C1C9300CE88EA /* ZHRealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 932B3B57228C1C9300CE88EA /* ZHRealViewController.m */; };
@@ -155,8 +217,6 @@
 		9311CD6E2282A6550049A7A2 /* FFUIPageControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFUIPageControlView.m; sourceTree = "<group>"; };
 		9311CD702282D04D0049A7A2 /* FFPageCountView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFPageCountView.h; sourceTree = "<group>"; };
 		9311CD712282D04D0049A7A2 /* FFPageCountView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFPageCountView.m; sourceTree = "<group>"; };
-		9311CD742282DB270049A7A2 /* UIView+FirstCategoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FirstCategoryView.h"; sourceTree = "<group>"; };
-		9311CD752282DB270049A7A2 /* UIView+FirstCategoryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FirstCategoryView.m"; sourceTree = "<group>"; };
 		9311CD772282DC030049A7A2 /* FFUIPageControlView+CatrgoryPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FFUIPageControlView+CatrgoryPage.h"; sourceTree = "<group>"; };
 		9311CD782282DC030049A7A2 /* FFUIPageControlView+CatrgoryPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FFUIPageControlView+CatrgoryPage.m"; sourceTree = "<group>"; };
 		9313CA6022817F2300C59C9C /* logo_img_02@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_img_02@3x.png"; sourceTree = "<group>"; };
@@ -177,6 +237,20 @@
 		93192A5B2285736C00FA5089 /* ZHAnimationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHAnimationCell.m; sourceTree = "<group>"; };
 		9319A14C22254C7D00FA05C2 /* ProblemOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProblemOne.h; sourceTree = "<group>"; };
 		9319A14D22254C7D00FA05C2 /* ProblemOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProblemOne.m; sourceTree = "<group>"; };
+		931C405122977BC5007555A9 /* testThree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testThree.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		931C405222977BC5007555A9 /* test copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "test copy-Info.plist"; path = "/Users/rrjj/Desktop/daydayUp/inFXCreateProgramer/test/test copy-Info.plist"; sourceTree = "<absolute>"; };
+		931C4056229781C7007555A9 /* ZHFoundation+log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZHFoundation+log.m"; sourceTree = "<group>"; };
+		931C405822978A51007555A9 /* UIView+ZHCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ZHCategory.h"; sourceTree = "<group>"; };
+		931C405922978A51007555A9 /* UIView+ZHCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZHCategory.m"; sourceTree = "<group>"; };
+		931C405B2297970F007555A9 /* ZHArchiveModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHArchiveModel.h; sourceTree = "<group>"; };
+		931C405C2297970F007555A9 /* ZHArchiveModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHArchiveModel.m; sourceTree = "<group>"; };
+		931C405E229798D3007555A9 /* ZHExtentionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHExtentionViewController.h; sourceTree = "<group>"; };
+		931C405F229798D3007555A9 /* ZHExtentionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHExtentionViewController.m; sourceTree = "<group>"; };
+		931C406122979FB4007555A9 /* ZHSubArcModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHSubArcModel.h; sourceTree = "<group>"; };
+		931C406222979FB4007555A9 /* ZHSubArcModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHSubArcModel.m; sourceTree = "<group>"; };
+		931C40642297B7A4007555A9 /* KnowledgePoint */ = {isa = PBXFileReference; lastKnownFileType = text; path = KnowledgePoint; sourceTree = "<group>"; };
+		931C40672297CDD8007555A9 /* KnowShell */ = {isa = PBXFileReference; lastKnownFileType = text; path = KnowShell; sourceTree = "<group>"; };
+		931C406922980BC8007555A9 /* abc.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = abc.sh; sourceTree = "<group>"; };
 		932B3B4F228BE1E400CE88EA /* ZHTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHTextField.h; sourceTree = "<group>"; };
 		932B3B50228BE1E400CE88EA /* ZHTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHTextField.m; sourceTree = "<group>"; };
 		932B3B53228BF6F500CE88EA /* UITextField+ZHCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+ZHCategory.h"; sourceTree = "<group>"; };
@@ -245,6 +319,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		931C403822977BC5007555A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931C403922977BC5007555A9 /* libReactiveCocoa.a in Frameworks */,
+				931C403A22977BC5007555A9 /* ShellSDK.framework in Frameworks */,
+				931C403B22977BC5007555A9 /* AppTestFrameWorkSDK.framework in Frameworks */,
+				931C403C22977BC5007555A9 /* AppTestFrameWorkSDK.framework in Frameworks */,
+				931C403D22977BC5007555A9 /* libPods-test.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -280,6 +366,7 @@
 				930F50E122433404006DE42D /* Customer-Info.plist */,
 				5F7246AB442DF551B3B2E6A0 /* Pods */,
 				247CE1DCA09E21B44332A080 /* Frameworks */,
+				931C405222977BC5007555A9 /* test copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -290,6 +377,7 @@
 				93023280216D9C4F009AF506 /* testTests.xctest */,
 				9302328B216D9C4F009AF506 /* testUITests.xctest */,
 				930F50E022433404006DE42D /* Customer.app */,
+				931C405122977BC5007555A9 /* testThree.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -369,6 +457,7 @@
 		9311CD672282A3EB0049A7A2 /* File */ = {
 			isa = PBXGroup;
 			children = (
+				931C40662297CD8E007555A9 /* know */,
 				930F0BDB2294E02000014377 /* test-Bridging-Header.h */,
 				930F0BDE2294E0CF00014377 /* empty.swift */,
 				93109F13225F115800DF5AA2 /* MTcityList.xml */,
@@ -381,7 +470,6 @@
 				9313CA6122817F2300C59C9C /* sound02.wav */,
 				93192A5322854E2700FA5089 /* DCURLRouter.plist */,
 				93192A5522854F6500FA5089 /* PrefixHeader.pch */,
-				930F0BEF22954FF700014377 /* RactiveCocoa */,
 			);
 			path = File;
 			sourceTree = "<group>";
@@ -405,6 +493,8 @@
 				932B3B57228C1C9300CE88EA /* ZHRealViewController.m */,
 				930F0BE62294EDBD00014377 /* ZHViewModelController.h */,
 				930F0BE72294EDBD00014377 /* ZHViewModelController.m */,
+				931C405E229798D3007555A9 /* ZHExtentionViewController.h */,
+				931C405F229798D3007555A9 /* ZHExtentionViewController.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -438,6 +528,10 @@
 				93B7D448228C1EFB0034719E /* Student.m */,
 				93B3AFFA228D4D62008FDBF9 /* Books.h */,
 				93B3AFFB228D4D62008FDBF9 /* Books.m */,
+				931C405B2297970F007555A9 /* ZHArchiveModel.h */,
+				931C405C2297970F007555A9 /* ZHArchiveModel.m */,
+				931C406122979FB4007555A9 /* ZHSubArcModel.h */,
+				931C406222979FB4007555A9 /* ZHSubArcModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -464,14 +558,8 @@
 		9311CD732282DAEE0049A7A2 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				9311CD742282DB270049A7A2 /* UIView+FirstCategoryView.h */,
-				9311CD752282DB270049A7A2 /* UIView+FirstCategoryView.m */,
-				9311CD772282DC030049A7A2 /* FFUIPageControlView+CatrgoryPage.h */,
-				9311CD782282DC030049A7A2 /* FFUIPageControlView+CatrgoryPage.m */,
-				93B3AFFD228D666F008FDBF9 /* UIApplication+Memory.h */,
-				93B3AFFE228D666F008FDBF9 /* UIApplication+Memory.m */,
-				935864292293F0EC00E6B115 /* NSString+Category.h */,
-				9358642A2293F0EC00E6B115 /* NSString+Category.m */,
+				931C405422978077007555A9 /* OtherCategory */,
+				931C405322978062007555A9 /* ViewCategory */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -483,6 +571,40 @@
 				93192A5B2285736C00FA5089 /* ZHAnimationCell.m */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		931C405322978062007555A9 /* ViewCategory */ = {
+			isa = PBXGroup;
+			children = (
+				9311CD772282DC030049A7A2 /* FFUIPageControlView+CatrgoryPage.h */,
+				9311CD782282DC030049A7A2 /* FFUIPageControlView+CatrgoryPage.m */,
+				931C405822978A51007555A9 /* UIView+ZHCategory.h */,
+				931C405922978A51007555A9 /* UIView+ZHCategory.m */,
+			);
+			path = ViewCategory;
+			sourceTree = "<group>";
+		};
+		931C405422978077007555A9 /* OtherCategory */ = {
+			isa = PBXGroup;
+			children = (
+				93B3AFFD228D666F008FDBF9 /* UIApplication+Memory.h */,
+				93B3AFFE228D666F008FDBF9 /* UIApplication+Memory.m */,
+				935864292293F0EC00E6B115 /* NSString+Category.h */,
+				9358642A2293F0EC00E6B115 /* NSString+Category.m */,
+				931C4056229781C7007555A9 /* ZHFoundation+log.m */,
+			);
+			path = OtherCategory;
+			sourceTree = "<group>";
+		};
+		931C40662297CD8E007555A9 /* know */ = {
+			isa = PBXGroup;
+			children = (
+				931C406922980BC8007555A9 /* abc.sh */,
+				930F0BEF22954FF700014377 /* RactiveCocoa */,
+				931C40642297B7A4007555A9 /* KnowledgePoint */,
+				931C40672297CDD8007555A9 /* KnowShell */,
+			);
+			path = know;
 			sourceTree = "<group>";
 		};
 		932B3B4E228BE1AB00CE88EA /* ZHObject */ = {
@@ -580,6 +702,24 @@
 			productReference = 930F50E022433404006DE42D /* Customer.app */;
 			productType = "com.apple.product-type.application";
 		};
+		931C401122977BC5007555A9 /* testThree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 931C404E22977BC5007555A9 /* Build configuration list for PBXNativeTarget "testThree" */;
+			buildPhases = (
+				931C401222977BC5007555A9 /* [CP] Check Pods Manifest.lock */,
+				931C401322977BC5007555A9 /* Sources */,
+				931C403822977BC5007555A9 /* Frameworks */,
+				931C403E22977BC5007555A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testThree;
+			productName = test;
+			productReference = 931C405122977BC5007555A9 /* testThree.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -627,6 +767,7 @@
 				9302327F216D9C4F009AF506 /* testTests */,
 				9302328A216D9C4F009AF506 /* testUITests */,
 				930F50CB22433404006DE42D /* Customer */,
+				931C401122977BC5007555A9 /* testThree */,
 			);
 		};
 /* End PBXProject section */
@@ -636,6 +777,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				931C40682297CDD8007555A9 /* KnowShell in Resources */,
 				93023278216D9C4F009AF506 /* LaunchScreen.storyboard in Resources */,
 				930F0BF022954FF700014377 /* RactiveCocoa in Resources */,
 				9313CA6B22817F2400C59C9C /* sound01.wav in Resources */,
@@ -644,11 +786,13 @@
 				93023275216D9C4F009AF506 /* Assets.xcassets in Resources */,
 				9313CA6822817F2400C59C9C /* logo_img_01@3x.png in Resources */,
 				93192A5422854E2700FA5089 /* DCURLRouter.plist in Resources */,
+				931C40652297B7A4007555A9 /* KnowledgePoint in Resources */,
 				93109F14225F115800DF5AA2 /* MTcityList.xml in Resources */,
 				93109F19225F13C200DF5AA2 /* CityListViewController.xib in Resources */,
 				9313CA6722817F2400C59C9C /* sound02.wav in Resources */,
 				9313CA6922817F2400C59C9C /* logo_img_01@2x.png in Resources */,
 				930B56F4225C6150005EAD28 /* zzzzzzz.zip in Resources */,
+				931C406A22980BC8007555A9 /* abc.sh in Resources */,
 				9313CA6622817F2400C59C9C /* logo_img_02@3x.png in Resources */,
 				93023273216D9C4E009AF506 /* Main.storyboard in Resources */,
 			);
@@ -679,10 +823,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		931C403E22977BC5007555A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931C403F22977BC5007555A9 /* LaunchScreen.storyboard in Resources */,
+				931C404022977BC5007555A9 /* RactiveCocoa in Resources */,
+				931C404122977BC5007555A9 /* sound01.wav in Resources */,
+				931C404222977BC5007555A9 /* logo_img_02@2x.png in Resources */,
+				931C404322977BC5007555A9 /* ClickViewController.xib in Resources */,
+				931C404422977BC5007555A9 /* Assets.xcassets in Resources */,
+				931C404522977BC5007555A9 /* logo_img_01@3x.png in Resources */,
+				931C404622977BC5007555A9 /* DCURLRouter.plist in Resources */,
+				931C404722977BC5007555A9 /* MTcityList.xml in Resources */,
+				931C404822977BC5007555A9 /* CityListViewController.xib in Resources */,
+				931C404922977BC5007555A9 /* sound02.wav in Resources */,
+				931C404A22977BC5007555A9 /* logo_img_01@2x.png in Resources */,
+				931C404B22977BC5007555A9 /* zzzzzzz.zip in Resources */,
+				931C404C22977BC5007555A9 /* logo_img_02@3x.png in Resources */,
+				931C404D22977BC5007555A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		520CB6AE327DA780439F08EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		931C401222977BC5007555A9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -744,6 +928,7 @@
 				930B56F2225C4C7D005EAD28 /* ZipViewController.m in Sources */,
 				93FA3178216DD28800F54F80 /* ClickViewController.m in Sources */,
 				93C64FE922896ECE009B6109 /* CircleSelectButtonView.m in Sources */,
+				931C405A22978A51007555A9 /* UIView+ZHCategory.m in Sources */,
 				9311CD722282D04D0049A7A2 /* FFPageCountView.m in Sources */,
 				93109F12225EE2D000DF5AA2 /* CustomView.m in Sources */,
 				930F0BE82294EDBD00014377 /* ZHViewModelController.m in Sources */,
@@ -751,14 +936,17 @@
 				9302327B216D9C4F009AF506 /* main.m in Sources */,
 				93192A5C2285736C00FA5089 /* ZHAnimationCell.m in Sources */,
 				93B3AFFF228D666F008FDBF9 /* UIApplication+Memory.m in Sources */,
+				931C4060229798D3007555A9 /* ZHExtentionViewController.m in Sources */,
 				9302326D216D9C4E009AF506 /* AppDelegate.m in Sources */,
 				930A7A6122923EF400906F69 /* specialShapeView.m in Sources */,
 				935F6A79217076BC0082D8F7 /* CityListView.m in Sources */,
+				931C405D2297970F007555A9 /* ZHArchiveModel.m in Sources */,
 				9358642E2293F87D00E6B115 /* ZHVerifyView.m in Sources */,
 				9311CD792282DC030049A7A2 /* FFUIPageControlView+CatrgoryPage.m in Sources */,
 				930F0BDF2294E0CF00014377 /* empty.swift in Sources */,
 				930F0BEE2295489000014377 /* ZHRacModel.m in Sources */,
-				9311CD762282DB270049A7A2 /* UIView+FirstCategoryView.m in Sources */,
+				931C4057229781C7007555A9 /* ZHFoundation+log.m in Sources */,
+				931C406322979FB4007555A9 /* ZHSubArcModel.m in Sources */,
 				9311CD6F2282A6550049A7A2 /* FFUIPageControlView.m in Sources */,
 				93C64FE622890363009B6109 /* ZHBluetoothViewController.m in Sources */,
 			);
@@ -793,6 +981,48 @@
 				930F50D222433404006DE42D /* main.m in Sources */,
 				930F50D322433404006DE42D /* AppDelegate.m in Sources */,
 				930F50D422433404006DE42D /* CityListView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		931C401322977BC5007555A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				931C401422977BC5007555A9 /* ZHRealViewController.m in Sources */,
+				931C401522977BC5007555A9 /* CityListViewController.m in Sources */,
+				931C401622977BC5007555A9 /* FFPlayerButton.m in Sources */,
+				931C401722977BC5007555A9 /* ZHTestViewController.m in Sources */,
+				931C401822977BC5007555A9 /* ZHViewModel.m in Sources */,
+				931C401922977BC5007555A9 /* ZHTextField.m in Sources */,
+				931C401A22977BC5007555A9 /* ReadOnlyModel.m in Sources */,
+				931C401B22977BC5007555A9 /* UITextField+ZHCategory.m in Sources */,
+				931C401C22977BC5007555A9 /* ViewController.m in Sources */,
+				931C401D22977BC5007555A9 /* Student.m in Sources */,
+				931C401E22977BC5007555A9 /* AnLineView.m in Sources */,
+				931C401F22977BC5007555A9 /* HotlListView.m in Sources */,
+				931C402022977BC5007555A9 /* NSString+Category.m in Sources */,
+				931C402122977BC5007555A9 /* ProblemOne.m in Sources */,
+				931C402222977BC5007555A9 /* Books.m in Sources */,
+				931C402322977BC5007555A9 /* AreaModel.m in Sources */,
+				931C402422977BC5007555A9 /* ZipViewController.m in Sources */,
+				931C402522977BC5007555A9 /* ClickViewController.m in Sources */,
+				931C402622977BC5007555A9 /* CircleSelectButtonView.m in Sources */,
+				931C402722977BC5007555A9 /* FFPageCountView.m in Sources */,
+				931C402822977BC5007555A9 /* CustomView.m in Sources */,
+				931C402922977BC5007555A9 /* ZHViewModelController.m in Sources */,
+				931C402A22977BC5007555A9 /* SiftView.m in Sources */,
+				931C402B22977BC5007555A9 /* main.m in Sources */,
+				931C402C22977BC5007555A9 /* ZHAnimationCell.m in Sources */,
+				931C402D22977BC5007555A9 /* UIApplication+Memory.m in Sources */,
+				931C402E22977BC5007555A9 /* AppDelegate.m in Sources */,
+				931C402F22977BC5007555A9 /* specialShapeView.m in Sources */,
+				931C403022977BC5007555A9 /* CityListView.m in Sources */,
+				931C403122977BC5007555A9 /* ZHVerifyView.m in Sources */,
+				931C403222977BC5007555A9 /* FFUIPageControlView+CatrgoryPage.m in Sources */,
+				931C403322977BC5007555A9 /* empty.swift in Sources */,
+				931C403422977BC5007555A9 /* ZHRacModel.m in Sources */,
+				931C403622977BC5007555A9 /* FFUIPageControlView.m in Sources */,
+				931C403722977BC5007555A9 /* ZHBluetoothViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1168,6 +1398,101 @@
 			};
 			name = Release;
 		};
+		931C404F22977BC5007555A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D816C08FF07DED0961BD1893 /* Pods-test.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = S84G648KD2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/test/FrameworkT",
+				);
+				GCC_PREFIX_HEADER = test/File/PrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"TargetType=2",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/DCURLRouter\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/Realm\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SSZipArchive\"",
+					"\"${PODS_ROOT}/Headers/Public/YYImage\"",
+					"\"${PODS_ROOT}/Headers/Public/YYModel\"",
+					"\"${PODS_ROOT}/Headers/Public/pop\"",
+				);
+				INFOPLIST_FILE = "test copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.coinyee.trip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "autoRelease描述文件";
+				SWIFT_OBJC_BRIDGING_HEADER = "test/File/test-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		931C405022977BC5007555A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB0A346ADFD5C145603AC23 /* Pods-test.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = S84G648KD2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test",
+					"$(PROJECT_DIR)/test/FrameworkT",
+				);
+				GCC_PREFIX_HEADER = test/File/PrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TargetType=3";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/DCURLRouter\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/Realm\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SSZipArchive\"",
+					"\"${PODS_ROOT}/Headers/Public/YYImage\"",
+					"\"${PODS_ROOT}/Headers/Public/YYModel\"",
+					"\"${PODS_ROOT}/Headers/Public/pop\"",
+				);
+				INFOPLIST_FILE = "test copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.coinyee.trip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "autoRelease描述文件";
+				SWIFT_OBJC_BRIDGING_HEADER = "test/File/test-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1212,6 +1537,15 @@
 			buildConfigurations = (
 				930F50DE22433404006DE42D /* Debug */,
 				930F50DF22433404006DE42D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		931C404E22977BC5007555A9 /* Build configuration list for PBXNativeTarget "testThree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				931C404F22977BC5007555A9 /* Debug */,
+				931C405022977BC5007555A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

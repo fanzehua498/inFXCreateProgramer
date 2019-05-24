@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CircleSelectButtonView : UIView
 - (void)setUP;
+
+@property (nonatomic,strong,readonly) UIViewController *viewController;
+
 @end
 
 NS_ASSUME_NONNULL_END

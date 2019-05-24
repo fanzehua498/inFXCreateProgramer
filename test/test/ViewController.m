@@ -15,6 +15,7 @@
 #import "ZHAnimationCell.h"
 #import "FFUIPageControlView.h"
 #import <Realm.h>
+#import "UIView+ZHCategory.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 /** Realm有一个注册通知的方法：addNotificationBlock:
@@ -52,6 +53,11 @@
     
     NSArray *array = @[];
     NSString *str;
+    
+    
+   
+    
+    
     
 //    @try {
 //        <#Code that can potentially throw an exception#>

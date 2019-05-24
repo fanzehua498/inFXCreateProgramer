@@ -9,6 +9,7 @@
 #import "ZHBluetoothViewController.h"
 #import "CircleSelectButtonView.h"
 #import "ZHTextField.h"
+#import "UIView+ZHCategory.h"
 #define kMaxLength 20
 
 CGColorSpaceRef ZHCGColorSpaceGetDeviceRGB(void) {
@@ -81,9 +82,9 @@ BOOL ZHCGImageRefContainsAlpha1(CGImageRef imageRef){
 //    [self.view addSubview:imageVIew1];
 //    imageVIew1.image = image;
     CircleSelectButtonView *v = [[CircleSelectButtonView alloc] initWithFrame:CGRectMake(0, 64, ScreenWidth, Screenheight)];
-   
-    [self.view addSubview:v];
-   
+
+//    [self.view addSubview:v];
+   NSLog(@"%@",v.getViewController);
     NSNumberFormatter *fo = [[NSNumberFormatter alloc] init];
     fo.numberStyle = NSNumberFormatterPercentStyle;
     fo.groupingSize = 2;

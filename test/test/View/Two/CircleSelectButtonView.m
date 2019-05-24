@@ -8,6 +8,7 @@
 
 #import "CircleSelectButtonView.h"
 #import "specialShapeView.h"
+#import "UIView+ZHCategory.h"
 @interface CircleSelectButtonView ()
 
 @property (nonatomic,strong) UIBezierPath *path1;
@@ -23,6 +24,13 @@
 
 @implementation CircleSelectButtonView
 
+-(void)willMoveToSuperview:(UIView *)newSuperview
+{
+    [super willMoveToSuperview:newSuperview];
+//    NSLog(@"%@",[newSuperview getViewController]);
+    _viewController = [newSuperview getViewController];
+//    [newSuperview getViewController];
+}
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -238,6 +246,7 @@
 {
     NSLog(@"%s %@", __func__, menu);
 }
+
 #pragma mark - 懒加载
 -(NSMutableArray *)mutableArr
 {
