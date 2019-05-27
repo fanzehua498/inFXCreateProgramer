@@ -31,6 +31,7 @@ PODS:
   - SDWebImage (4.4.5):
     - SDWebImage/Core (= 4.4.5)
   - SDWebImage/Core (4.4.5)
+  - SGPagingView (1.6.1)
   - SSZipArchive (2.1.4)
   - YYImage (1.0.4):
     - YYImage/Core (= 1.0.4)
@@ -46,6 +47,7 @@ DEPENDENCIES:
   - ReactiveCocoa (= 2.5)
   - Realm
   - SDWebImage
+  - SGPagingView
   - SSZipArchive
   - YYImage
   - YYModel
@@ -59,6 +61,7 @@ SPEC REPOS:
     - ReactiveCocoa
     - Realm
     - SDWebImage
+    - SGPagingView
     - SSZipArchive
     - YYImage
     - YYModel
@@ -81,10 +84,11 @@ SPEC CHECKSUMS:
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
   SDWebImage: ecc03494e973b93b80213649d32175f8d2d17d4d
+  SGPagingView: 11753f76f2fa9f306d152f33e833f735c0751def
   SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: ba2eea60f978c22953c5eaa98d7c88883d6cb3d3
+PODFILE CHECKSUM: 809c30e1c23c905cb7d5de82d20cf353c106713a
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.7.0

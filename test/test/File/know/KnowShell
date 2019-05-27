@@ -23,4 +23,4 @@ shell字符串
 str='i'm string' 或者str="i'm string" 或者 str = i'm string
 双引号
 my_name='fanzehua'
-str="hello \"$my_name\"!n"
+str="hello \"$my_name\"!n"	

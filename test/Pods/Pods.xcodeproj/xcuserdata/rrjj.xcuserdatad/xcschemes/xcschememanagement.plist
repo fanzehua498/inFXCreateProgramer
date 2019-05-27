@@ -67,26 +67,33 @@
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
-		<key>SSZipArchive.xcscheme</key>
+		<key>SGPagingView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>12</integer>
 		</dict>
-		<key>YYImage.xcscheme</key>
+		<key>SSZipArchive.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>13</integer>
 		</dict>
-		<key>YYModel.xcscheme</key>
+		<key>YYImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>14</integer>
+		</dict>
+		<key>YYModel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>15</integer>
 		</dict>
 		<key>pop.xcscheme</key>
 		<dict>

@@ -11,6 +11,7 @@ def common_Pods
 	pod 'YYImage'
 	pod 'Realm'
 	pod 'ReactiveCocoa','2.5'
+	pod 'SGPagingView'
 end
 
 target 'test' do

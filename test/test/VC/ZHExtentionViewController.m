@@ -9,7 +9,12 @@
 #import "ZHExtentionViewController.h"
 #import "ZHArchiveModel.h"
 #import "ZHSubArcModel.h"
-@interface ZHExtentionViewController ()
+#import "ZHPageTestViewController.h"
+#import <SGPagingView.h>
+@interface ZHExtentionViewController ()<SGPageContentScrollViewDelegate,SGPageTitleViewDelegate>
+@property (nonatomic,strong) SGPageTitleView *pageTitleView;
+@property (nonatomic,strong) SGPageContentScrollView *contentS;
+
 
 @end
 
@@ -38,10 +43,36 @@
     [[NSFileManager defaultManager] createFileAtPath:path contents:nil attributes:nil];
     [data writeToFile:path atomically:YES];
     
+    [self setupPageView];
+}
+
+- (void)setupPageView
+{
+    NSMutableArray *titleArr = [NSMutableArray array];
+    NSMutableArray *vcArr = [NSMutableArray array];
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"DCURLRouter" ofType:@"plist"]];
+    NSDictionary *zhtest = dict[@"ZHTest"];
+    for (NSInteger i = 0; i < zhtest.allKeys.count; i ++) {
+        [titleArr addObject:zhtest.allValues[i]];
+//        Class class = NSClassFromString(zhtest.allValues[i]);
+        ZHPageTestViewController *viewC = [[ZHPageTestViewController alloc] init];
+        viewC.labelTitle = [NSString stringWithFormat:@"%@",zhtest.allValues[i]];
+        [vcArr addObject:viewC];
+    }
     
+    SGPageTitleViewConfigure *configure = [SGPageTitleViewConfigure pageTitleViewConfigure];
+    self.pageTitleView = [SGPageTitleView pageTitleViewWithFrame:CGRectMake(0, 64, ScreenWidth, 44) delegate:self titleNames:titleArr configure:configure];
+    [self.view addSubview:self.pageTitleView];
+    
+    self.contentS = [[SGPageContentScrollView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.pageTitleView.frame), ScreenWidth, Screenheight - CGRectGetMaxY(self.pageTitleView.frame)) parentVC:self childVCs:vcArr];
+    self.contentS.delegatePageContentScrollView = self;
+    
+    [self.view addSubview:self.contentS];
+    self.contentS.isAnimated = YES;
     
 }
 
+#pragma mark - touch
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     NSString *path = [NSHomeDirectory() stringByAppendingPathComponent:@"ios.archiver1"];
@@ -55,14 +86,24 @@
         NSLog(@"%@",error);
     }
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - SGPageContentScrollViewDelegate,SGPageTitleViewDelegate
+
+
+- (void)pageTitleView:(SGPageTitleView *)pageTitleView selectedIndex:(NSInteger)selectedIndex {
+    [self.contentS setPageContentScrollViewCurrentIndex:selectedIndex];
 }
-*/
+
+-(void)pageContentScrollView:(SGPageContentScrollView *)pageContentScrollView progress:(CGFloat)progress originalIndex:(NSInteger)originalIndex targetIndex:(NSInteger)targetIndex
+{
+    [self.pageTitleView setPageTitleViewWithProgress:progress originalIndex:originalIndex targetIndex:targetIndex];
+}
+
+
+
+
+
+
+
 
 @end
