@@ -1,0 +1,6 @@
+framework module ZHSDKDemo {
+  umbrella header "ZHSDKDemo.h"
+
+  export *
+  module * { export * }
+}

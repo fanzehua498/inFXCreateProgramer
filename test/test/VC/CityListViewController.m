@@ -29,6 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    __weak typeof(self) weakSelf = self;
     self.view.backgroundColor = [UIColor whiteColor];
     NSString *path = [[NSBundle mainBundle]pathForResource:@"MTcityList" ofType:@"xml"];
 
@@ -38,13 +39,13 @@
     
     
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        BOOL result = [parser parse];
-        if (result) {
-            NSLog(@"成功parse");
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                [self.tableView reloadData];
-            });
-        }
+//        BOOL result = [parser parse];
+//        if (result) {
+//            NSLog(@"成功parse");
+//            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//                [weakSelf.tableView reloadData];
+//            });
+//        }
     });
 
     self.tableView.delegate = self;

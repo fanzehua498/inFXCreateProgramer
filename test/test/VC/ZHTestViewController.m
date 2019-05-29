@@ -23,7 +23,8 @@
 
 #import "FFUIPageControlView.h"
 
-static void*queueKey = "QueueKey";
+#define labelText @"myLabel"
+//static void*queueKey = "QueueKey";
 @interface ZHTestViewController ()<WKUIDelegate,WKNavigationDelegate,UNUserNotificationCenterDelegate>
 {
     SiftView *sift;
@@ -65,7 +66,7 @@ static void*queueKey = "QueueKey";
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 30)];
     //    label.backgroundColor = [UIColor redColor];
-    label.text = @"我是alabel";
+    label.text = labelText;
     [self.view addSubview:label];
     [NSTimer scheduledTimerWithTimeInterval:4 repeats:YES block:^(NSTimer * _Nonnull timer) {
         

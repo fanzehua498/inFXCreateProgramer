@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZHBaseViewController.h"
 
 
-
-@interface ZHPageTestViewController : UIViewController
+@interface ZHPageTestViewController : ZHBaseViewController
 @property (copy, nonatomic) NSString *labelTitle;
 @end
 

@@ -12,6 +12,8 @@ def common_Pods
 	pod 'Realm'
 	pod 'ReactiveCocoa','2.5'
 	pod 'SGPagingView'
+	pod 'MBProgressHUD'
+	pod 'FBRetainCycleDetector'
 end
 
 target 'test' do

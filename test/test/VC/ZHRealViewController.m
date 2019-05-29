@@ -65,6 +65,7 @@
     
     NSPredicate *filterPredicate = [NSPredicate predicateWithFormat:@"name LIKE '*a'"];
     RLMResults *prRes3 = [Student objectsWithPredicate:filterPredicate];
+    NSLog(@"%@ %@ %@ %@ %@",stu,prRes.realm,prRes1.realm,prRes2.realm,prRes3.realm);
 }
 
 -(void)reChange{
@@ -124,6 +125,7 @@
 - (void)sortModel{
     
     RLMResults *res = [Student.allObjects sortedResultsUsingKeyPath:@"num" ascending:YES];
+    NSLog(@"%@",res.realm);
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

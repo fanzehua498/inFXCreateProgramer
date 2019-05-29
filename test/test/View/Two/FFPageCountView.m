@@ -24,7 +24,7 @@
 {
     [super drawRect:rect];
     
-    CAShapeLayer *layer = [CAShapeLayer layer];
+//    CAShapeLayer *layer = [CAShapeLayer layer];
 }
 
 /*

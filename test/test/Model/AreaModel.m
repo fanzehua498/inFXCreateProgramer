@@ -19,6 +19,14 @@
 @end
 @implementation areaCityModel
 
+
+#pragma mark public
+-(void)readWithHeight
+{
+    NSLog(@"readOnly:%.f",[self changeHeight]);
+}
+
+#pragma mark - private
 -(void)setName:(NSString *)name
 {
     _name = name;
@@ -26,11 +34,20 @@
     _readOnlyHeight = [_name boundingRectWithSize:CGSizeMake(200, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:@{} context:nil].size.height;
     _readOnlyStr = name;
 }
+- (CGFloat)changeHeight
+{
+    if (_readOnlyHeight < 0) {
+        _readOnlyHeight = 40;
+    }
+    return _readOnlyHeight;
+}
 
+#pragma mark - MJExtension
 + (NSDictionary *)mj_replacedKeyFromPropertyName
 {
     return @{@"Id": @"id"};
 }
+
 
 #pragma mark - 设置kvc修改只读不可用
 + (BOOL)accessInstanceVariablesDirectly

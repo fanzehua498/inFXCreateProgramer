@@ -28,6 +28,7 @@
 @property (nonatomic,assign,readonly) CGFloat readOnlyHeight;
 
 @property (copy, nonatomic) NSString *readOnlyStr;
+- (void)readWithHeight;
 @end
 
 

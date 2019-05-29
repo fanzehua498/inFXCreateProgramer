@@ -51,8 +51,8 @@
     }];
     
     
-    NSArray *array = @[];
-    NSString *str;
+//    NSArray *array = @[];
+//    NSString *str;
     
     
    

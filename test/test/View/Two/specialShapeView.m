@@ -126,7 +126,7 @@
 
 /**
  判断一个点是否在扇形内（相对中心点）
- @param center  扇形的中心点
+ @param center 扇形的中心点
  @param direction 中心线的方向坐标
  @param r 半径
  @param angle 角度（0 < angle < 360）

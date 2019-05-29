@@ -11,8 +11,8 @@
 
 static UIImage *gbackgroundImage;
 static UIImage *gBackgroundImageHighLighted;
-static int borderRadius = 5;
-static int height = 37;
+//static int borderRadius = 5;
+//static int height = 37;
 
 @implementation CustomView
 

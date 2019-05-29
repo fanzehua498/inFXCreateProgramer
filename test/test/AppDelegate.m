@@ -10,6 +10,7 @@
 #import <Realm.h>
 #import "Student.h"
 #import "Books.h"
+#import "AppDelegate+ZHMemoryDelegate.h"
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
 #import <UserNotifications/UserNotifications.h>
@@ -26,6 +27,7 @@
     [self registerLocalNotification];
     [DCURLRouter loadConfigDictFromPlist:@"DCURLRouter.plist"];
     [self dataVersion];
+//    [self ZH_application:application didFinishLaunchingWithOptions:launchOptions];
 //    [self bookData];
     return YES;
 }
