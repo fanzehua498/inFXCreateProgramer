@@ -7,7 +7,7 @@
 //
 
 #import "ZHSDKTestViewController.h"
-#import <ZHSDKDemo/ZHSDKDemoViewController.h>
+//#import <ZHSDKDemo/ZHSDKDemoViewController.h>
 #import <UserNotifications/UserNotifications.h>
 #import "CHDLaunchView.h"
 #import "UIView+ZHCategory.h"
@@ -50,7 +50,7 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    ZHSDKDemoViewController *vc = [[ZHSDKDemoViewController alloc] init];
+//    ZHSDKDemoViewController *vc = [[ZHSDKDemoViewController alloc] init];
     
     [self animationFun];
 //    [self presentViewController:vc animated:YES completion:nil];

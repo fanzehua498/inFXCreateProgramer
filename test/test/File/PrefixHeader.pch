@@ -11,8 +11,18 @@
 
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define Screenheight [UIScreen mainScreen].bounds.size.height
-#import <DCURLRouter.h>
 
+#define kStatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
+//iPhoneX底部安全区域
+#define isIPhoneX  ((kStatusBarHeight == 44)?YES:NO)
+
+#define SafeAreaBottomHeight (isIPhoneX ? 34 : 0)
+#define SafeAreaTopHeight (isIPhoneX ? 88 : 64)
+#define SafeAreaTabBarHeight (isIPhoneX ? 78 : 44)
+#define StatusBarHeight (isIPhoneX ? 44 : 20)
+
+#import <DCURLRouter.h>
+#import "UIViewController+ReverseValue.h"
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

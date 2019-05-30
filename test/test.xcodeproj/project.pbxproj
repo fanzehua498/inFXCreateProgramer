@@ -22,9 +22,6 @@
 		9306D460216F41E800B9A5D1 /* SiftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9306D45F216F41E800B9A5D1 /* SiftView.m */; };
 		93088084229B83F10075AC63 /* ZHPageTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93088083229B83F10075AC63 /* ZHPageTestViewController.m */; };
 		930880BC229BA8FF0075AC63 /* ZHSDKTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930880BB229BA8FF0075AC63 /* ZHSDKTestViewController.m */; };
-		930880C7229BACE40075AC63 /* ZHSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930880C6229BACE40075AC63 /* ZHSDKDemo.framework */; };
-		930880C8229BACED0075AC63 /* ZHSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930880C6229BACE40075AC63 /* ZHSDKDemo.framework */; };
-		930880C9229BACED0075AC63 /* ZHSDKDemo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 930880C6229BACE40075AC63 /* ZHSDKDemo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		930A7A6122923EF400906F69 /* specialShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 930A7A6022923EF400906F69 /* specialShapeView.m */; };
 		930B56F2225C4C7D005EAD28 /* ZipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930B56F1225C4C7D005EAD28 /* ZipViewController.m */; };
 		930B56F4225C6150005EAD28 /* zzzzzzz.zip in Resources */ = {isa = PBXBuildFile; fileRef = 930B56F3225C6150005EAD28 /* zzzzzzz.zip */; };
@@ -67,6 +64,12 @@
 		93192A582285624900FA5089 /* ZHTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93192A572285624900FA5089 /* ZHTestViewController.m */; };
 		93192A5C2285736C00FA5089 /* ZHAnimationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93192A5B2285736C00FA5089 /* ZHAnimationCell.m */; };
 		9319A14E22254C7D00FA05C2 /* ProblemOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 9319A14D22254C7D00FA05C2 /* ProblemOne.m */; };
+		931AC18A229F76AF00C878D4 /* ZHCamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 931AC189229F76AF00C878D4 /* ZHCamViewController.m */; };
+		931AC18F229F7F3500C878D4 /* ZHAVDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 931AC18E229F7F3500C878D4 /* ZHAVDeviceManager.m */; };
+		931AC193229FB90300C878D4 /* ZHCameraLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 931AC192229FB90300C878D4 /* ZHCameraLayer.m */; };
+		931AC197229FC5E300C878D4 /* ZHCamHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 931AC196229FC5E300C878D4 /* ZHCamHeadView.m */; };
+		931AC199229FC6B300C878D4 /* ZHCamHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 931AC198229FC6B300C878D4 /* ZHCamHeadView.xib */; };
+		931AC19D229FE7C900C878D4 /* UIViewController+ReverseValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 931AC19B229FE7C800C878D4 /* UIViewController+ReverseValue.m */; };
 		931C401422977BC5007555A9 /* ZHRealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 932B3B57228C1C9300CE88EA /* ZHRealViewController.m */; };
 		931C401522977BC5007555A9 /* CityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93109F16225F13C200DF5AA2 /* CityListViewController.m */; };
 		931C401622977BC5007555A9 /* FFPlayerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 930E4415226EA2D400EE3265 /* FFPlayerButton.m */; };
@@ -174,7 +177,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				930880C9229BACED0075AC63 /* ZHSDKDemo.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,7 +214,6 @@
 		93088083229B83F10075AC63 /* ZHPageTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHPageTestViewController.m; sourceTree = "<group>"; };
 		930880BA229BA8FF0075AC63 /* ZHSDKTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHSDKTestViewController.h; sourceTree = "<group>"; };
 		930880BB229BA8FF0075AC63 /* ZHSDKTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHSDKTestViewController.m; sourceTree = "<group>"; };
-		930880C6229BACE40075AC63 /* ZHSDKDemo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZHSDKDemo.framework; sourceTree = "<group>"; };
 		930A7A5F22923EF400906F69 /* specialShapeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = specialShapeView.h; sourceTree = "<group>"; };
 		930A7A6022923EF400906F69 /* specialShapeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = specialShapeView.m; sourceTree = "<group>"; };
 		930A7A6522929E8800906F69 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
@@ -264,6 +265,17 @@
 		93192A5B2285736C00FA5089 /* ZHAnimationCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHAnimationCell.m; sourceTree = "<group>"; };
 		9319A14C22254C7D00FA05C2 /* ProblemOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProblemOne.h; sourceTree = "<group>"; };
 		9319A14D22254C7D00FA05C2 /* ProblemOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProblemOne.m; sourceTree = "<group>"; };
+		931AC188229F76AF00C878D4 /* ZHCamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHCamViewController.h; sourceTree = "<group>"; };
+		931AC189229F76AF00C878D4 /* ZHCamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHCamViewController.m; sourceTree = "<group>"; };
+		931AC18D229F7F3500C878D4 /* ZHAVDeviceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHAVDeviceManager.h; sourceTree = "<group>"; };
+		931AC18E229F7F3500C878D4 /* ZHAVDeviceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHAVDeviceManager.m; sourceTree = "<group>"; };
+		931AC191229FB90300C878D4 /* ZHCameraLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHCameraLayer.h; sourceTree = "<group>"; };
+		931AC192229FB90300C878D4 /* ZHCameraLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHCameraLayer.m; sourceTree = "<group>"; };
+		931AC195229FC5E300C878D4 /* ZHCamHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHCamHeadView.h; sourceTree = "<group>"; };
+		931AC196229FC5E300C878D4 /* ZHCamHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHCamHeadView.m; sourceTree = "<group>"; };
+		931AC198229FC6B300C878D4 /* ZHCamHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHCamHeadView.xib; sourceTree = "<group>"; };
+		931AC19B229FE7C800C878D4 /* UIViewController+ReverseValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ReverseValue.m"; path = "../../../Pods/DCURLRouter/UIViewController+ReverseValue.m"; sourceTree = "<group>"; };
+		931AC19C229FE7C800C878D4 /* UIViewController+ReverseValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ReverseValue.h"; path = "../../../Pods/DCURLRouter/UIViewController+ReverseValue.h"; sourceTree = "<group>"; };
 		931C405122977BC5007555A9 /* testThree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testThree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		931C405222977BC5007555A9 /* test copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "test copy-Info.plist"; path = "/Users/rrjj/Desktop/daydayUp/inFXCreateProgramer/test/test copy-Info.plist"; sourceTree = "<absolute>"; };
 		931C4056229781C7007555A9 /* ZHFoundation+log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ZHFoundation+log.m"; sourceTree = "<group>"; };
@@ -325,10 +337,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				930880C8229BACED0075AC63 /* ZHSDKDemo.framework in Frameworks */,
 				930F0BE52294E6B100014377 /* libReactiveCocoa.a in Frameworks */,
 				93C1030E225B485100C1BA7C /* ShellSDK.framework in Frameworks */,
-				930880C7229BACE40075AC63 /* ZHSDKDemo.framework in Frameworks */,
 				93054960225B20490083754F /* AppTestFrameWorkSDK.framework in Frameworks */,
 				1A49F9F86AF017BC19D105D4 /* libPods-test.a in Frameworks */,
 			);
@@ -420,6 +430,8 @@
 		9302326A216D9C4E009AF506 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				931AC190229FB8D500C878D4 /* Layer */,
+				931AC18C229F7E9100C878D4 /* manager */,
 				932B3B4E228BE1AB00CE88EA /* ZHObject */,
 				9311CD732282DAEE0049A7A2 /* Category */,
 				9311CD6B2282A4600049A7A2 /* Model */,
@@ -461,7 +473,6 @@
 		930548F9225AEFF30083754F /* FrameworkT */ = {
 			isa = PBXGroup;
 			children = (
-				930880C6229BACE40075AC63 /* ZHSDKDemo.framework */,
 				93C1030D225B485100C1BA7C /* ShellSDK.framework */,
 				9305495F225B20490083754F /* AppTestFrameWorkSDK.framework */,
 			);
@@ -471,6 +482,7 @@
 		930E4413226EA28500EE3265 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				931AC194229FC5B300C878D4 /* head */,
 				93192A592285733400FA5089 /* Cell */,
 				932B3B52228BF6C800CE88EA /* Three */,
 				9311CD6C2282A4900049A7A2 /* Two */,
@@ -537,6 +549,8 @@
 				930880BB229BA8FF0075AC63 /* ZHSDKTestViewController.m */,
 				93CDB4DB229E8B81005A2794 /* ZHBaseViewController.h */,
 				93CDB4DC229E8B81005A2794 /* ZHBaseViewController.m */,
+				931AC188229F76AF00C878D4 /* ZHCamViewController.h */,
+				931AC189229F76AF00C878D4 /* ZHCamViewController.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -600,6 +614,7 @@
 		9311CD732282DAEE0049A7A2 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				931AC19A229FE79C00C878D4 /* VC */,
 				93CDB4D4229E8468005A2794 /* AppdelegateCategory */,
 				931C405422978077007555A9 /* OtherCategory */,
 				931C405322978062007555A9 /* ViewCategory */,
@@ -614,6 +629,43 @@
 				93192A5B2285736C00FA5089 /* ZHAnimationCell.m */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		931AC18C229F7E9100C878D4 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				931AC18D229F7F3500C878D4 /* ZHAVDeviceManager.h */,
+				931AC18E229F7F3500C878D4 /* ZHAVDeviceManager.m */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		931AC190229FB8D500C878D4 /* Layer */ = {
+			isa = PBXGroup;
+			children = (
+				931AC191229FB90300C878D4 /* ZHCameraLayer.h */,
+				931AC192229FB90300C878D4 /* ZHCameraLayer.m */,
+			);
+			path = Layer;
+			sourceTree = "<group>";
+		};
+		931AC194229FC5B300C878D4 /* head */ = {
+			isa = PBXGroup;
+			children = (
+				931AC195229FC5E300C878D4 /* ZHCamHeadView.h */,
+				931AC196229FC5E300C878D4 /* ZHCamHeadView.m */,
+				931AC198229FC6B300C878D4 /* ZHCamHeadView.xib */,
+			);
+			path = head;
+			sourceTree = "<group>";
+		};
+		931AC19A229FE79C00C878D4 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				931AC19C229FE7C800C878D4 /* UIViewController+ReverseValue.h */,
+				931AC19B229FE7C800C878D4 /* UIViewController+ReverseValue.m */,
+			);
+			path = VC;
 			sourceTree = "<group>";
 		};
 		931C405322978062007555A9 /* ViewCategory */ = {
@@ -842,6 +894,7 @@
 				9313CA6A22817F2400C59C9C /* logo_img_02@2x.png in Resources */,
 				93FA3179216DD28800F54F80 /* ClickViewController.xib in Resources */,
 				93023275216D9C4F009AF506 /* Assets.xcassets in Resources */,
+				931AC199229FC6B300C878D4 /* ZHCamHeadView.xib in Resources */,
 				9313CA6822817F2400C59C9C /* logo_img_01@3x.png in Resources */,
 				93192A5422854E2700FA5089 /* DCURLRouter.plist in Resources */,
 				931C40652297B7A4007555A9 /* KnowledgePoint in Resources */,
@@ -951,6 +1004,7 @@
 			files = (
 				93CDB4D3229E79A9005A2794 /* ZHSpringWithDampingView.m in Sources */,
 				932B3B58228C1C9300CE88EA /* ZHRealViewController.m in Sources */,
+				931AC197229FC5E300C878D4 /* ZHCamHeadView.m in Sources */,
 				930880BC229BA8FF0075AC63 /* ZHSDKTestViewController.m in Sources */,
 				93109F18225F13C200DF5AA2 /* CityListViewController.m in Sources */,
 				930E4416226EA2D400EE3265 /* FFPlayerButton.m in Sources */,
@@ -967,11 +1021,13 @@
 				935F6A7621704AF40082D8F7 /* HotlListView.m in Sources */,
 				9358642B2293F0EC00E6B115 /* NSString+Category.m in Sources */,
 				9319A14E22254C7D00FA05C2 /* ProblemOne.m in Sources */,
+				931AC18A229F76AF00C878D4 /* ZHCamViewController.m in Sources */,
 				93B3AFFC228D4D62008FDBF9 /* Books.m in Sources */,
 				93145BBE2264614500B7A6DC /* AreaModel.m in Sources */,
 				930B56F2225C4C7D005EAD28 /* ZipViewController.m in Sources */,
 				93FA3178216DD28800F54F80 /* ClickViewController.m in Sources */,
 				93C64FE922896ECE009B6109 /* CircleSelectButtonView.m in Sources */,
+				931AC18F229F7F3500C878D4 /* ZHAVDeviceManager.m in Sources */,
 				931C405A22978A51007555A9 /* UIView+ZHCategory.m in Sources */,
 				9311CD722282D04D0049A7A2 /* FFPageCountView.m in Sources */,
 				93109F12225EE2D000DF5AA2 /* CustomView.m in Sources */,
@@ -981,6 +1037,7 @@
 				93192A5C2285736C00FA5089 /* ZHAnimationCell.m in Sources */,
 				93B3AFFF228D666F008FDBF9 /* UIApplication+Memory.m in Sources */,
 				93088084229B83F10075AC63 /* ZHPageTestViewController.m in Sources */,
+				931AC19D229FE7C900C878D4 /* UIViewController+ReverseValue.m in Sources */,
 				931C4060229798D3007555A9 /* ZHExtentionViewController.m in Sources */,
 				9302326D216D9C4E009AF506 /* AppDelegate.m in Sources */,
 				930A7A6122923EF400906F69 /* specialShapeView.m in Sources */,
@@ -995,6 +1052,7 @@
 				931C406322979FB4007555A9 /* ZHSubArcModel.m in Sources */,
 				93CDB4D0229E67A6005A2794 /* CHDLaunchView.m in Sources */,
 				9311CD6F2282A6550049A7A2 /* FFUIPageControlView.m in Sources */,
+				931AC193229FB90300C878D4 /* ZHCameraLayer.m in Sources */,
 				93C64FE622890363009B6109 /* ZHBluetoothViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1231,10 +1289,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = S84G648KD2;
+				DEVELOPMENT_TEAM = 6NG4KGA3LC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/test",
@@ -1266,9 +1324,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.coinyee.trip;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coinyee.trip1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "autoRelease描述文件";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "test/File/test-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1282,9 +1340,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = S84G648KD2;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6NG4KGA3LC;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/test",
@@ -1312,9 +1370,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.coinyee.trip;
+				PRODUCT_BUNDLE_IDENTIFIER = com.coinyee.trip1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "autoRelease描述文件";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "test/File/test-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

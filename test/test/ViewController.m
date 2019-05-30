@@ -129,7 +129,8 @@
     
     [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     
-    [DCURLRouter pushURLString:zhtest.allKeys[indexPath.row] query:@{} animated:YES];
+    
+    [DCURLRouter pushURLString:zhtest.allKeys[indexPath.row] query:@{} animated:YES ];
 }
 
 -(NSMutableArray *)dataSource

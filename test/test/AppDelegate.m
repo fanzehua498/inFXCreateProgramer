@@ -54,7 +54,6 @@
                 if (oldSchemaVersion < 2) {
                     newObject[@"email"] = @"";
                 }
-                
             }];
             // 替换属性名(原字段重命名)
             if (oldSchemaVersion < 12) { // 重命名操作应该在调用 `enumerateObjects:` 之外完成
@@ -66,7 +65,6 @@
     config.inMemoryIdentifier = @"memory";//配置内存数据库，应用杀死之后数据不会保存。
     [RLMRealmConfiguration setDefaultConfiguration:config];
     [RLMRealm defaultRealm];
-    
     //每次修改了数据的模型的时候 就需改一次schemaVersion属性（版本号 注意：版本号不能低于上一次的版本）
 }
 
@@ -77,7 +75,6 @@
     config.fileURL = [[[config.fileURL URLByDeletingLastPathComponent] URLByAppendingPathComponent:@"zehua"] URLByAppendingPathExtension:@"realm"];
     
     int newVersion = 0;
-    
     // 设置新的架构版本。这个版本号必须高于之前所用的版本号（如果您之前从未设置过架构版本，那么这个版本号设置为 0）
     config.schemaVersion = newVersion;
     config.migrationBlock = ^(RLMMigration *migration, uint64_t oldSchemaVersion) {
@@ -85,7 +82,6 @@
         if (oldSchemaVersion <= newVersion) {
             // 什么都不要做！Realm 会自行检测新增和需要移除的属性，然后自动更新硬盘上的数据库架构
             NSLog(@"数据结构会自动迁移");
-            
             // enumerateObjects:block: 遍历了存储在 Realm 文件中的每一个“Person”对象
             [migration enumerateObjects:[Books className] block:^(RLMObject * _Nullable oldObject, RLMObject * _Nullable newObject) {
                 // 只有当 Realm 数据库的架构版本为 0 的时候，才添加 “fullName” 属性
@@ -96,7 +92,6 @@
 //                if (oldSchemaVersion < 2) {
 //                    newObject[@"email"] = @"";
 //                }
-                
             }];
             // 替换属性名(原字段重命名)
 //            if (oldSchemaVersion < 12) { // 重命名操作应该在调用 `enumerateObjects:` 之外完成
@@ -106,7 +101,6 @@
     };
     [RLMRealmConfiguration setDefaultConfiguration:config];
     [RLMRealm realmWithURL:config.fileURL];
-    
 }
 
 
