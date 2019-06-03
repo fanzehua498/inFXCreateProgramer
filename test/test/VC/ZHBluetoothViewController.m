@@ -111,9 +111,12 @@ BOOL ZHCGImageRefContainsAlpha1(CGImageRef imageRef){
     // 输出结果: 任务1 任务2 ——》 任务 barrier ——》任务3 任务4  // 其中的任务1与任务2，任务3与任务4 由于是并行处理先后顺序不定。
     ZHTextField *field = [[ZHTextField alloc] initWithFrame:CGRectMake(100, 100, 100, 30) WithDelegate:self];
     field.placeholder = @"placeholder";
-    field.MaxLength = 10;
-    field.type = FieldTypeChinese;
-//    [self.view addSubview:field];
+    field.borderStyle = UITextBorderStyleRoundedRect;
+    
+//    field.secureTextEntry = YES;
+    field.MaxLength = 100;
+    field.type = FieldTypeLetter;
+    [self.view addSubview:field];
 
 }
 - (UIImage *)compressImageWith:(UIImage *)image

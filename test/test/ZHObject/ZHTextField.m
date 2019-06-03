@@ -14,7 +14,7 @@
 
 @implementation ZHTextField
 
-
+#pragma mark - 初始化
 -(instancetype)initWithFrame:(CGRect)frame WithDelegate:(id)object
 {
     if (self = [super initWithFrame:frame]) {
@@ -29,36 +29,59 @@
     _type = type;
     if (type == FieldTypeNone) {
     }else{
+        if (type == FieldTypeLetter) {
+            self.keyboardType  = UIKeyboardTypeASCIICapable;
+        }else if (type == FieldTypeDecimal){
+             self.keyboardType = UIKeyboardTypeNumberPad;
+        }
         self.delegate = self;
         [self addTarget:self action:@selector(textFieldChange:) forControlEvents:UIControlEventEditingChanged];
     }
+}
+#pragma mark - public
+- (NSInteger)curOffset{
+    // 基于文首计算出到光标的偏移数值。
+    return [self offsetFromPosition:self.beginningOfDocument toPosition:self.selectedTextRange.start];
+}
+- (void)makeOffset:(NSInteger)offset{
+    // 实现原理是先获取一个基于文尾的偏移，然后加上要施加的偏移，再重新根据文尾计算位置，最后利用选取来实现光标定位。
+    UITextRange *selectedRange = [self selectedTextRange];
+    NSInteger currentOffset = [self offsetFromPosition:self.endOfDocument toPosition:selectedRange.end];
+    currentOffset += offset;
+    UITextPosition *newPos = [self positionFromPosition:self.endOfDocument offset:currentOffset];
+    self.selectedTextRange = [self textRangeFromPosition:newPos toPosition:newPos];
+}
+- (void)makeOffsetFromBeginning:(NSInteger)offset{
+    // 先把光标移动到文首，然后再调用上面实现的偏移函数。
+    UITextPosition *begin = self.beginningOfDocument;
+    UITextPosition *start = [self positionFromPosition:begin offset:0];
+    UITextRange *range = [self textRangeFromPosition:start toPosition:start];
+    [self setSelectedTextRange:range];
+    [self makeOffset:offset];
+}
+
+#pragma mark - UITextFieldDelegate
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    //[self makeOffset:-5];
+    return YES;
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
     
     if ([self isInputRuleNotBlank:string] || [string isEqualToString:@""]) {//当输入符合规则和退格键时允许改变输入框
-        
-         self.lastStr = textField.text;
+        self.lastStr = textField.text;
         return YES;
     } else {
         return NO;
     }
 }
 
-
 - (void)textFieldChange:(UITextField *)textField
 {
     NSString *toBeString = textField.text;
-    
-    if (![self isInputRuleAndBlank:toBeString]) {
 
-        textField.text = [self disable_emoji:toBeString];
-        textField.text = [self disable_emoji:self.lastStr];
-        return;
-    }
     NSString *lang = [[textField textInputMode] primaryLanguage]; // 获取当前键盘输入模式
-    NSLog(@"%@",lang);
-    
     if([lang isEqualToString:@"zh-Hans"])
     { //简体中文输入,第三方输入法（搜狗）所有模式下都会显示“zh-Hans”
         UITextRange *selectedRange = [textField markedTextRange];
@@ -68,8 +91,13 @@
         if(!position) {
             NSString *getStr = [self getSubString:toBeString];
             if(getStr && getStr.length > 0) {
-                textField.text = getStr;
-                self.lastStr = getStr;
+                if (self.type == FieldTypeNone) {
+                    textField.text = getStr;
+                    self.lastStr = getStr;
+                }else{
+                    textField.text = [self disable_emoji:getStr];
+                    self.lastStr = [self disable_emoji:getStr];
+                }
             }
         }
     }
@@ -77,13 +105,19 @@
     {
         NSString *getStr = [self getSubString:toBeString];
         if(getStr && getStr.length > 0) {
-            textField.text= getStr;
-            self.lastStr = getStr;
+            if (self.type == FieldTypeNone) {
+                textField.text = getStr;
+                self.lastStr = getStr;
+            }else{
+                textField.text = [self disable_emoji:getStr];
+                self.lastStr = [self disable_emoji:getStr];
+            }
         }
     }
 }
+#pragma mark - private
 /**
- * 字母、数字、中文正则判断（不包括空格）
+ * 字母、数字、中文正则判断（在系统输入法中文输入时会出现拼音之间有空格，需要忽略，当按return键时会自动用字母替换，按空格输入响应汉字）
  */
 - (BOOL)isInputRuleNotBlank:(NSString *)str {
     
@@ -129,51 +163,6 @@
     BOOL isMatch = [pred evaluateWithObject:str];
     return isMatch;
 }
-/**
- * 字母、数字、中文正则判断（包括空格）（在系统输入法中文输入时会出现拼音之间有空格，需要忽略，当按return键时会自动用字母替换，按空格输入响应汉字）
- */
-- (BOOL)isInputRuleAndBlank:(NSString *)str {
-    NSString *pattern = @"";
-    switch (self.type) {
-        case FieldTypeNone:
-            return YES;
-            break;
-        case FieldTypeLetter:
-        {
-            pattern = @"^[a-zA-Z]*$";
-        }
-            break;
-        case FieldTypeDecimal:
-        {
-            pattern = @"^[➋➌➍➎➏➐➑➒]*$";
-        }
-            break;
-        case FieldTypeIDNumber:
-        {
-            pattern = @"^[➋➌➍➎➏➐➑➒xX\\d]*$";
-        }
-            break;
-        case FieldTypeChinese:
-        {
-            pattern = @"^[a-zA-Z\u4E00-\u9FA5]*$";
-        }
-            break;
-        case FieldTypeAll:
-        {
-            pattern = @"^[➋➌➍➎➏➐➑➒a-zA-Z\u4E00-\u9FA5\\d]*$";
-        }
-            break;
-        default:
-            break;
-    }
-    if (pattern.length == 0) {
-        return YES;
-    }
-    //    NSString *pattern = @"^[➋➌➍➎➏➐➑➒a-zA-Z\u4E00-\u9FA5\\d\\s]*$";
-    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
-    BOOL isMatch = [pred evaluateWithObject:str];
-    return isMatch;
-}
 -(NSString *)getSubString:(NSString*)string
 {
     NSStringEncoding encoding = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
@@ -193,7 +182,7 @@
         }
         return content;
     }
-    return nil;
+    return string;
 }
 
 - (NSString *)disable_emoji:(NSString *)text{
@@ -204,5 +193,7 @@
                                                           withTemplate:@""];
     return modifiedString;
 }
+
+
 
 @end

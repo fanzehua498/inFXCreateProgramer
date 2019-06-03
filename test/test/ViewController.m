@@ -49,24 +49,11 @@
        
         NSLog(@"%@--%@",notification,realm);
     }];
-    
-    
-//    NSArray *array = @[];
-//    NSString *str;
-    
-    
    
-    
-    
-    
-//    @try {
-//        <#Code that can potentially throw an exception#>
-//    } @catch (NSException *exception) {
-//        <#Handle an exception thrown in the @try block#>
-//    } @finally {
-//        <#Code that gets executed whether or not an exception is thrown#>
-//    }
-    
+//    NSLog(@"%@",[UITextInputMode activeInputModes]);
+    for (UITextInputMode *model in [UITextInputMode activeInputModes]) {
+        NSLog(@"%@",model.primaryLanguage);
+    }
 }
 -(void)dealloc
 {
@@ -129,8 +116,18 @@
     
     [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     
-    
-    [DCURLRouter pushURLString:zhtest.allKeys[indexPath.row] query:@{} animated:YES ];
+    [DCURLRouter pushURLString:zhtest.allKeys[indexPath.row] query:@{} animated:YES reverseBlock:^(id _Nonnull obj) {
+        
+        if (obj) {
+            UIAlertController *alertController = [UIAlertController alertControllerWithTitle:nil message:obj preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {}];
+            [alertController addAction:cancelAction];
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [DCURLRouter presentViewController:alertController animated:YES completion:nil];
+            });
+        }
+    }];
+
 }
 
 -(NSMutableArray *)dataSource

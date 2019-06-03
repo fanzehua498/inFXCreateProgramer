@@ -8,6 +8,8 @@
 	<string>WebViewController</string>
 	<key>ZHTest</key>
 	<dict>
+		<key>ZHTest://Cachevc</key>
+		<string>ZHCacheViewController</string>
 		<key>ZHTest://CAMvc</key>
 		<string>ZHCamViewController</string>
 		<key>ZHTest://SDKvc</key>

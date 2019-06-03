@@ -44,6 +44,11 @@
     [self.dManager stopRunning];
 }
 
+-(void)dealloc
+{
+    NSLog(@"%s",__func__);
+}
+
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     
@@ -65,7 +70,6 @@
     [self.view addSubview:self.resultLabel];
     self.resultLabel.numberOfLines = 0;
     
-    
     [head mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.view).offset(isIPhoneX ? 20:0);
         make.left.equalTo(self.view).offset(0);
@@ -82,14 +86,20 @@
 #pragma mark - ZHScanOutPutMetaDelegate
 -(void)ZHScanDataWithArray:(NSArray<__kindof AVMetadataObject *> *)array
 {
+    
+    __weak typeof(self) weakSelf = self;
     NSString *result = @"";
     for (AVMetadataMachineReadableCodeObject *obj in array) {
         NSLog(@"码数据:%@",obj.stringValue);
         NSLog(@"码类型:%@",obj.type);
         result = [result stringByAppendingFormat:@"%@ %@",obj.stringValue,obj.type];
     }
-    [self.dManager focalLength];
+    
     self.resultLabel.text = result;
+    if (weakSelf.reserveValue) {
+        weakSelf.reserveValue(result);
+    }
+    [DCURLRouter popViewControllerAnimated:YES];
 }
 
 #pragma mark - lazy

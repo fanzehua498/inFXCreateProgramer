@@ -14,7 +14,6 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - DCURLRouter (0.81)
   - FBRetainCycleDetector (0.1.4)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
@@ -42,7 +41,6 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - DCURLRouter
   - FBRetainCycleDetector
   - Masonry
   - MBProgressHUD
@@ -59,7 +57,6 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
-    - DCURLRouter
     - FBRetainCycleDetector
     - Masonry
     - MBProgressHUD
@@ -83,7 +80,6 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  DCURLRouter: 6bb8d5c85390f5ce5a9966ad68e0e994a3e89b25
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
@@ -97,6 +93,6 @@ SPEC CHECKSUMS:
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 18bef28fab26d1aa64ae137feb6aaf151009e1bf
+PODFILE CHECKSUM: 6559380d685d6c6f04d9c6bc75975daf7eb0c427
 
 COCOAPODS: 1.7.0

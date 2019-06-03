@@ -21,10 +21,34 @@ typedef NS_ENUM(NSUInteger, FieldType) {
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ZHTextField : UITextField
+/**
+ * 获取光标位置
+ */
+- (NSInteger)curOffset;
 
+/**
+ * 从当前位置偏移
+ */
+- (void)makeOffset:(NSInteger)offset;
+
+/**
+ * 从头偏移
+ */
+- (void)makeOffsetFromBeginning:(NSInteger)offset;
+
+/**
+ * 构造函数
+ */
 -(instancetype)initWithFrame:(CGRect)frame WithDelegate:(id)object;
 
+/**
+ * 输入类型
+ */
 @property (nonatomic,assign) FieldType type;
+
+/**
+ * 可输入最长长度
+ */
 @property (nonatomic,assign) CGFloat MaxLength;
 @end
 
