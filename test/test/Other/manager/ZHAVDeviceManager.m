@@ -87,7 +87,6 @@
     imageViewLeftBottom.image = [UIImage imageNamed:@"QRCodeLeftBottom"];
     [view addSubview:imageViewLeftBottom];
     
-    
     UIImageView *imageViewRightTop = [[UIImageView alloc] initWithFrame:CGRectMake(frame.size.width - 32 -35, (frame.size.height - (frame.size.width - distance * 2)) / 2, 32, 32)];
     imageViewRightTop.image = [UIImage imageNamed:@"QRCodeRightTop"];
     [view addSubview:imageViewRightTop];
@@ -96,7 +95,6 @@
     imageViewRightBottom.image = [UIImage imageNamed:@"QRCodeRightBottom"];
     [view addSubview:imageViewRightBottom];
     
-    
     UIImageView *line = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, 12)];
     line.image = [UIImage imageNamed:@"QRCodeScanningLine"];
     [view addSubview:line];
@@ -104,14 +102,11 @@
     
     CABasicAnimation *animation = [self animation:@(0) toValue:@(frame.size.width - distance * 2 - 6) repCount:CGFLOAT_MAX duration:2.5];
     [line.layer addAnimation:animation forKey:@"lineYanimation"];
-    
-    
 //    self.metaOutPut.rectOfInterest = path.bounds;
 }
 
 -(void)startRunning
 {
-//    [UIApplication sharedApplication].statusBarHidden = YES;
     if (self.session && !self.session.isRunning) {
         [self.session startRunning];
         self.isChangeZoom = NO;
@@ -122,8 +117,6 @@
 }
 - (void)stopRunning
 {
-//    [UIApplication sharedApplication].statusBarHidden = NO;
-    
     dispatch_sync(dispatch_get_global_queue(0, 0), ^{
         [self changeDevicePropertySafety:^(AVCaptureDevice *captureDevice) {
             [captureDevice rampToVideoZoomFactor:1.0 withRate:10];
@@ -229,13 +222,13 @@
                 NSURL *url= [NSURL URLWithString:UIApplicationOpenSettingsURLString];
                 
                 if (@available(iOS 10.0, *)){
-                    if( [[UIApplication sharedApplication]canOpenURL:url] ) {
-                        [[UIApplication sharedApplication]openURL:url options:@{}completionHandler:^(BOOL success) {
+                    if( [[UIApplication sharedApplication] canOpenURL:url] ) {
+                        [[UIApplication sharedApplication] openURL:url options:@{}completionHandler:^(BOOL success) {
                         }];
                     }
                 }else{
-                    if( [[UIApplication sharedApplication]canOpenURL:url] ) {
-                        [[UIApplication sharedApplication]openURL:url];
+                    if( [[UIApplication sharedApplication] canOpenURL:url] ) {
+//                        [[UIApplication sharedApplication] openURL:url];
                     }
                 }
             }];

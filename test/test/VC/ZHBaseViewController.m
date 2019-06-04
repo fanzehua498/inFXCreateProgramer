@@ -7,7 +7,7 @@
 //
 
 #import "ZHBaseViewController.h"
-#import <FBRetainCycleDetector.h>
+//#import <FBRetainCycleDetector.h>
 @interface ZHBaseViewController ()
 
 @end
@@ -17,18 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
-    FBRetainCycleDetector *detector = [FBRetainCycleDetector new];
-    [detector addCandidate:self];
-    NSSet *retainCycles = [detector findRetainCycles];
-    if (retainCycles.count > 0) {
-       NSLog(@"%@ %@",self,retainCycles);
-    }
+//    FBRetainCycleDetector *detector = [FBRetainCycleDetector new];
+//    [detector addCandidate:self];
+//    NSSet *retainCycles = [detector findRetainCycles];
+//    if (retainCycles.count > 0) {
+//       NSLog(@"%@ %@",self,retainCycles);
+//    }
     
 }
 

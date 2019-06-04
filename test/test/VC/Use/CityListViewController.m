@@ -29,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    __weak typeof(self) weakSelf = self;
+//    __weak typeof(self) weakSelf = self;
     self.view.backgroundColor = [UIColor whiteColor];
     NSString *path = [[NSBundle mainBundle]pathForResource:@"MTcityList" ofType:@"xml"];
 

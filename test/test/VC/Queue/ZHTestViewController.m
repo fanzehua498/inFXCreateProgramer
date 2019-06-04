@@ -216,13 +216,13 @@
     [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:UNAuthorizationOptionBadge|UNAuthorizationOptionSound|UNAuthorizationOptionAlert completionHandler:^(BOOL granted, NSError * _Nullable error) {
         if (granted) {
             if ([UIDevice currentDevice].systemVersion.floatValue < 10.0 ) {
-                UILocalNotification *notification = [[UILocalNotification alloc] init];
-                notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:2];
-                notification.repeatInterval = NSCalendarUnitDay;
-                notification.alertBody = @"本地通知1";
-                notification.timeZone = [NSTimeZone defaultTimeZone];
-                notification.soundName = UILocalNotificationDefaultSoundName;
-                [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+//                UILocalNotification *notification = [[UILocalNotification alloc] init];
+//                notification.fireDate = [NSDate dateWithTimeIntervalSinceNow:2];
+//                notification.repeatInterval = NSCalendarUnitDay;
+//                notification.alertBody = @"本地通知1";
+//                notification.timeZone = [NSTimeZone defaultTimeZone];
+//                notification.soundName = UILocalNotificationDefaultSoundName;
+//                [[UIApplication sharedApplication] scheduleLocalNotification:notification];
             } else {
                 //必须写代理，不然无法监听通知的接收与点击事件
                 //                UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
@@ -306,7 +306,7 @@
                 /// 大于等于10.0系统使用此openURL方法
                 [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
             } else {
-                [[UIApplication sharedApplication] openURL:url];
+//                [[UIApplication sharedApplication] openURL:url];
             }
         }
     }

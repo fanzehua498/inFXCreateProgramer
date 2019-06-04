@@ -13,7 +13,7 @@ def common_Pods
 	pod 'ReactiveCocoa','2.5'
 	pod 'SGPagingView'
 	pod 'MBProgressHUD'
-	pod 'FBRetainCycleDetector'
+	#pod 'FBRetainCycleDetector'
 end
 
 target 'test' do

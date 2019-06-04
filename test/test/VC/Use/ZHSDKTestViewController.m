@@ -61,27 +61,27 @@
 
 - (void)localNotifi1
 {
-    UILocalNotification *localNote = [[UILocalNotification alloc] init];
-
-    // 2.设置本地通知的内容
-    // 2.1.设置通知发出的时间
-    localNote.fireDate = [NSDate dateWithTimeIntervalSinceNow:0];
-    // 2.2.设置通知的内容
-    localNote.alertBody = @"alertBody";
-    // 2.4.决定alertAction是否生效
-    localNote.hasAction = NO;
-    // 2.6.设置alertTitle
-    localNote.alertTitle = @"alertTitle";
-    // 2.7.设置有通知时的音效
-    localNote.soundName = UILocalNotificationDefaultSoundName;
-    // 2.8.设置应用程序图标右上角的数字
-    localNote.applicationIconBadgeNumber = 0;
-    // 2.9.设置额外信息
-    localNote.userInfo = @{};
-    localNote.alertLaunchImage = @"icon_certification_status1@2x";
-
-    // 3.调用通知
-    [[UIApplication sharedApplication] scheduleLocalNotification:localNote];
+//    UILocalNotification *localNote = [[UILocalNotification alloc] init];
+//
+//    // 2.设置本地通知的内容
+//    // 2.1.设置通知发出的时间
+//    localNote.fireDate = [NSDate dateWithTimeIntervalSinceNow:0];
+//    // 2.2.设置通知的内容
+//    localNote.alertBody = @"alertBody";
+//    // 2.4.决定alertAction是否生效
+//    localNote.hasAction = NO;
+//    // 2.6.设置alertTitle
+//    localNote.alertTitle = @"alertTitle";
+//    // 2.7.设置有通知时的音效
+//    localNote.soundName = UILocalNotificationDefaultSoundName;
+//    // 2.8.设置应用程序图标右上角的数字
+//    localNote.applicationIconBadgeNumber = 0;
+//    // 2.9.设置额外信息
+//    localNote.userInfo = @{};
+//    localNote.alertLaunchImage = @"icon_certification_status1@2x";
+//
+//    // 3.调用通知
+//    [[UIApplication sharedApplication] scheduleLocalNotification:localNote];
 }
 
 - (void)localNotifi2

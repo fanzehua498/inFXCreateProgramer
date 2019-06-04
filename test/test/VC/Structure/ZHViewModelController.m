@@ -95,16 +95,16 @@
 //    [[RACSignal interval:1.0 onScheduler:[RACScheduler scheduler]] subscribeNext:^(id x) {
 //        NSLog(@"定时器：%@",x);
 //    }];
-    RACSignal *rep = [[RACSignal interval:1 onScheduler:[RACScheduler    mainThreadScheduler]] subscribeNext:^(NSDate *time) {
-        NSLog(@"定时器：%@",time);
-        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-        [formatter setDateFormat:@"HH:mm:ss"];
-
-        NSLog(@"riqi:：%@",[formatter stringFromDate:time]);
-    }];
+//    RACSignal *rep = [[RACSignal interval:1 onScheduler:[RACScheduler    mainThreadScheduler]] subscribeNext:^(NSDate *time) {
+//        NSLog(@"定时器：%@",time);
+//        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+//        [formatter setDateFormat:@"HH:mm:ss"];
+//
+//        NSLog(@"riqi:：%@",[formatter stringFromDate:time]);
+//    }];
     
     //申请注册一个时间属性的信号量
-    RACSignal *timeSignal = [self rac_valuesForKeyPath:@"time" observer:self];
+//    RACSignal *timeSignal = [self rac_valuesForKeyPath:@"time" observer:self];
     //为信号量添加执行代码端
 //    [timeSignal subscribeNext:^(NSDate* time) {
 //        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
@@ -160,7 +160,7 @@
     [self.viewModel.command.executionSignals.switchToLatest subscribeNext:^(NSArray *array) {
         @strongify(self);
         NSLog(@"控制器获取到了");
-        NSLog(@"%@",array);
+        NSLog(@"%@ %@",array,self.viewModel);
         
     }];
     //执行command  才能监听

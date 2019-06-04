@@ -11,6 +11,7 @@
 
 @interface ZHCacheViewController ()<NSCacheDelegate>
 @property (nonatomic,strong) NSCache *cache;
+@property (nonatomic,strong) NSArray *Array;
 
 @end
 
@@ -26,7 +27,7 @@
     self.cache.countLimit = 10;
     self.cache.delegate = self;
     
-    
+    self.Array = [NSArray arrayWithObjects:@"aaa", nil];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
@@ -40,6 +41,8 @@
     for (NSInteger j = 0; j < 20; j ++) {
         NSLog(@"查看cache %@",[self.cache objectForKey:[NSString stringWithFormat:@"%ld",j]]);
     }
+    
+    self.Array = nil;
     [self callJS];
 }
 
@@ -47,15 +50,16 @@
 - (void)callJS{
     JSContext *context = [[JSContext alloc] init];
     
-    NSString *file = [[NSBundle mainBundle] pathForResource:@"my" ofType:@"js"];
+    NSString *file = [[NSBundle mainBundle] pathForResource:@"controllers" ofType:@"js"];
     NSData *data=[NSData dataWithContentsOfFile:file];
     NSString *responData =  [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
     
     [context evaluateScript:responData];
-    JSValue *addjs = context[@"reduce"];
+    JSValue *addjs = context[@"showTimeBox"];
     
     JSValue *sum = [addjs callWithArguments:@[@(17),@(10)]];
     NSInteger intsum = [sum toInt32];
+ 
     NSLog(@"%zi",intsum);
     
 }
