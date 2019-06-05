@@ -11,10 +11,13 @@
 
 @interface ZHImageOperationManager ()
 @property (nonatomic,strong) NSOperationQueue *operationQueue;
-
+//正在操作的imageOperation
 @property (nonatomic,strong) NSMutableDictionary *operations;
-
+//已下载的图片
 @property (nonatomic,strong) NSMutableDictionary *images;
+
+@property (nonatomic,strong) NSCache *cache;
+
 @end
 
 @implementation ZHImageOperationManager
@@ -68,7 +71,6 @@
             self.operations[url] = op;
         }
     }
-    
 }
 
 

@@ -12,6 +12,7 @@
 @interface ZHCacheViewController ()<NSCacheDelegate>
 @property (nonatomic,strong) NSCache *cache;
 @property (nonatomic,strong) NSArray *Array;
+@property (nonatomic,strong) UILabel *inLabel;
 
 @end
 
@@ -28,6 +29,10 @@
     self.cache.delegate = self;
     
     self.Array = [NSArray arrayWithObjects:@"aaa", nil];
+    
+    self.inLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    [self.view addSubview:self.inLabel];
+    self.inLabel.text = @"inlabel";
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
@@ -45,7 +50,12 @@
     self.Array = nil;
     [self callJS];
 }
-
+- (void)injected{
+    
+    NSLog(@"I've been injected: %@", self);
+    self.view.backgroundColor = [UIColor redColor];
+    self.inLabel.text = @"bbb";
+}
 
 - (void)callJS{
     JSContext *context = [[JSContext alloc] init];
