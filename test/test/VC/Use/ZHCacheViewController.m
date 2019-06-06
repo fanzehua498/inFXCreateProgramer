@@ -53,8 +53,8 @@
 - (void)injected{
     
     NSLog(@"I've been injected: %@", self);
-    self.view.backgroundColor = [UIColor redColor];
-    self.inLabel.text = @"bbb";
+    self.view.backgroundColor = [UIColor blueColor];
+    self.inLabel.text = @"cccc";
 }
 
 - (void)callJS{

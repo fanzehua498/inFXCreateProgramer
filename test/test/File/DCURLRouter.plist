@@ -8,6 +8,10 @@
 	<string>WebViewController</string>
 	<key>ZHTest</key>
 	<dict>
+		<key>ZHTest://Collectionvc</key>
+		<string>ZHCollectionViewController</string>
+		<key>ZHTest://adapvc</key>
+		<string>ZHAdapViewController</string>
 		<key>ZHTest://customQueuevc</key>
 		<string>ZHCustomOperationVC</string>
 		<key>ZHTest://Queuevc</key>
