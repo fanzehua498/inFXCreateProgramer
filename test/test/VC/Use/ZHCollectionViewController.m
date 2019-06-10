@@ -24,6 +24,43 @@
     [self.view addSubview:self.collectionView];
 }
 
+#pragma mark - private
+- (BOOL)isChinese:(NSString *)str{
+    NSString *pattern = @"[\u4e00-\u9fa5]{2,16}";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
+    BOOL isMatch = [pred evaluateWithObject:str];
+    return isMatch;
+}
+
+- (NSArray *)stringLenth:(NSString *)str{
+    NSMutableArray *resultArr = [NSMutableArray array];
+    if (!str || str.length == 0) {
+        return resultArr;
+    }
+    NSInteger cheseL = 0;
+    NSInteger index = 0;
+    for (NSInteger i = 0; i < str.length; i ++) {
+        NSString *chinese = [str substringWithRange:NSMakeRange(i, 1)];
+        BOOL result = [self isChinese:chinese];
+        if (result) {
+            cheseL = cheseL + 2;
+            if (cheseL == 9 || cheseL == 10) {
+                index = i-1;
+            }
+        }else{
+            cheseL ++;
+            if (cheseL == 9) {
+                index = i;
+            }
+        }
+    }
+    [resultArr addObject:@(cheseL)];
+    [resultArr addObject:@(index)];
+    return resultArr;
+}
+
+
+
 #pragma mark - delegate datasource
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     return 1;
