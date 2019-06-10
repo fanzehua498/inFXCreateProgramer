@@ -21,6 +21,7 @@
 		9302327B216D9C4F009AF506 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9302327A216D9C4F009AF506 /* main.m */; };
 		93023285216D9C4F009AF506 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93023284216D9C4F009AF506 /* testTests.m */; };
 		93023290216D9C4F009AF506 /* testUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9302328F216D9C4F009AF506 /* testUITests.m */; };
+		93032A5B22AE4DEA00C797ED /* ZHNotifyObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 93032A5A22AE4DEA00C797ED /* ZHNotifyObject.m */; };
 		93054960225B20490083754F /* AppTestFrameWorkSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9305495F225B20490083754F /* AppTestFrameWorkSDK.framework */; };
 		93054E65227004B200F192F8 /* AnLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93054E64227004B200F192F8 /* AnLineView.m */; };
 		9306D460216F41E800B9A5D1 /* SiftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9306D45F216F41E800B9A5D1 /* SiftView.m */; };
@@ -235,6 +236,8 @@
 		9302328B216D9C4F009AF506 /* testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9302328F216D9C4F009AF506 /* testUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testUITests.m; sourceTree = "<group>"; };
 		93023291216D9C4F009AF506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93032A5922AE4DEA00C797ED /* ZHNotifyObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHNotifyObject.h; sourceTree = "<group>"; };
+		93032A5A22AE4DEA00C797ED /* ZHNotifyObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHNotifyObject.m; sourceTree = "<group>"; };
 		9305495D225B1FBF0083754F /* AppTestFrameWorkSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTestFrameWorkSDK.framework; path = test/FrameworkT/AppTestFrameWorkSDK.framework; sourceTree = "<group>"; };
 		9305495F225B20490083754F /* AppTestFrameWorkSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppTestFrameWorkSDK.framework; sourceTree = "<group>"; };
 		93054E63227004B200F192F8 /* AnLineView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnLineView.h; sourceTree = "<group>"; };
@@ -973,6 +976,8 @@
 				931C44EB22A7B3BB006A8B7B /* FlowLaout */,
 				932B3B4F228BE1E400CE88EA /* ZHTextField.h */,
 				932B3B50228BE1E400CE88EA /* ZHTextField.m */,
+				93032A5922AE4DEA00C797ED /* ZHNotifyObject.h */,
+				93032A5A22AE4DEA00C797ED /* ZHNotifyObject.m */,
 			);
 			path = ZHObject;
 			sourceTree = "<group>";
@@ -1318,6 +1323,7 @@
 				93109F12225EE2D000DF5AA2 /* CustomView.m in Sources */,
 				930F0BE82294EDBD00014377 /* ZHViewModelController.m in Sources */,
 				930F25CE22A669CA00AAFBB1 /* ZHAllnumDataModel.m in Sources */,
+				93032A5B22AE4DEA00C797ED /* ZHNotifyObject.m in Sources */,
 				931AC1C2229FF00E00C878D4 /* UIViewController+ReverseValue.m in Sources */,
 				9306D460216F41E800B9A5D1 /* SiftView.m in Sources */,
 				9302327B216D9C4F009AF506 /* main.m in Sources */,

@@ -9,9 +9,11 @@
 #import "ZHCollectionViewController.h"
 #import "ZHLayout.h"
 #import "ZHCircleLayout.h"
+#import "ZHNotifyObject.h"
 @interface ZHCollectionViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (nonatomic,strong) UICollectionView *collectionView;
+@property (nonatomic,strong) ZHNotifyObject *nObj;
 
 @end
 
@@ -21,12 +23,20 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self.view addSubview:self.collectionView];
+//    [self.view addSubview:self.collectionView];
+    self.nObj = [ZHNotifyObject new];
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = touches.anyObject;
+    
+    self.nObj.name = NSStringFromCGPoint([touch locationInView:self.view]);
 }
 
 #pragma mark - private
 - (BOOL)isChinese:(NSString *)str{
-    NSString *pattern = @"[\u4e00-\u9fa5]{2,16}";
+    NSString *pattern = @"[\u4e00-\u9fa5]";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
     BOOL isMatch = [pred evaluateWithObject:str];
     return isMatch;
